@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Jeremy Nguyen - Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Riddle - Portfolio Template">
+	<meta name="keywords" content="portfolio, riddle, onepage, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<header class="header-section">
+		<div class="container-fluid">
+			<div class="row">
+				<a href="home.html" class="logo">
+					<h2 class="site-logo">JEREMY NGUYEN</h2>
+				</a>
+				<div class="col home-2 text-left text-md-right">
+					<nav class="main-menu">
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- <a href="" class="site-btn header-btn">Get in touch</a> -->
+			</div>
+		</div>
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
+		</div>
+	</header>
+	<!-- header section end -->
+
+<br>
+
+
+<section class="intro-section">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-xl-10 offset-xl-1">
+
+
+				<h3> Scanna AR  </h3>
+
+				<br>
+
+				<h4 > Overview </h4>
+
+				<br>
+
+				<p>
+					Scanna AR is an Augmented Reality app that simulates a real life budtender to provide users with the ability to ask questions and details about Cannabis products. The app is built for iOS tablets and with Unity’s ARFoundation framework (built in Unity).
+
+					App uses an image tracker which “scans” a product and identifies which product the budtender will assist the user with. The tracking is followed up by a markerless AR where a plane (in this case horizontal) is tracked by a camera and the user is prompted to tap the projected plane to summon the experience.
+
+				</p>
+
+				<strong> Note: </strong> App is only a proof of concept and not a fully built app.
+				<br>
+				<br>
+
+				<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/watch?v=W6nZQoxxT94&" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+				<iframe width="640" height="360" src="https://www.youtube.com/embed/W6nZQoxxT94" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br>
+				<br>
+				<br>
+
+				<h4 > What I did: </h4>
+
+				<br>
+
+					<ul>
+						<li> Implemented a markerless Augmented Reality experience with horizontal plane detection that activates an assistance bot explaining cannabis products</li>
+						<li> Designed a 3D environment for individual Cannabis products explaining product information in an intuitive and easy way </li>
+						<li> Added scanning features where scanning specific products enables a markerless AR experience that activates a hologram budtender that educates users on
+						that particular cannabis product and about cannabis in general </li>
+						<li> Shot video demos of Scanna and cut together clips and audio to make a pitch video that was used during pitches by sales  </li>
+
+					</ul>
+
+
+
+
+
+			<br>
+
+
+
+
+				<br>
+
+				<h4> Prefabs</h4>
+				<br>
+
+				<p> The app includes three prefabs which are the three products that are currently on the app.
+				 </p>
+
+				 <ol>
+					 <li> Yin Yang </li>
+					 <li> Penelope Oil </li>
+					 <li> Tropical Breeze</li>
+				 </ol>
+
+				 <p>
+					 Each prefab has a corresponding UI that when the user taps a ‘Learn More’ button, a modal box shows up with extra info and purchase potential.
+					 Each prefab contains content for a product including its THC, CBD, Name, Brand as 3D objects, and options for back, forward, and a ‘Learn More’.
+				 </p>
+
+				 <h4> Unity Scene</h4>
+ 				<br>
+				<p>
+					The main scene is Demo 2 which does all the AR tracking, markerless AR, and UI elements.
+
+				</p>
+
+				<ol style="">
+
+					<li> <b>AR Camera </b>
+						<ul> <li> ARFoundation pre-built, responsible for rendering the AR scene </li> </ul>
+					 </li>
+
+					 <li> <b>AR Session Origin </b>
+ 						<ul> <li> Contains PlaneManager, TapToPlace script, Raycast Manager, virtual button (interaction), image tracker, image info tracker </li>
+
+					 </ul>
+
+ 					 </li>
+
+					<li> <b>Canvas:</b> contains all the UI elements </li>
+					<li> <b>Lean Touch:</b> enables gesture inputs </li>
+					<li> <b>Placement Indicator:</b> prefab for when there is plane detection </li>
+				</ol>
+
+
+
+
+				<h4> Workflow</h4>
+			 <br>
+			 <p>
+				 The main user workflow with the app is as follows:
+
+			 </p>
+
+
+			 <ol style="">
+
+		 		<li> <b>User points device at product barcode </b>
+		 			<ul> <li> Device detects the image from a reference library and chooses which sequence to play. Currently the products that work for scanning are Liiv Yin & Yang, SynrG Tropical Breeze, and Tweed Penelope Oil. (Products barcode may depend on how they look) </li> </ul>
+		 		 </li>
+
+		 		 <li> <b>User taps to start the AR experience</b>
+		 			<ul>
+								<li> Once the device detects the image the user is prompted to point their device to a flat horizontal surface and a marker will appear </li>
+								<li> Tap on the marker to start the experience </li>
+		 		 </ul>
+
+		 		 </li>
+
+		 		<li><b>User taps to start the AR experience</b>
+
+					<ul>
+								<li> The AR budtender explains features of the Cannabis product such as CBD, THC, etc. </li>
+								<li> Users can skip through various parts of the by using a back and forward button </li>
+								<li> A learn more button can be tapped to prompt more information about the product and the ability to visit the provider websites where they can buy.
+									</li>
+				 </ul>
+				 </li>
+
+				 <li><b>Static UIs</b>
+
+					 <ul>
+								 <li> <b>Scan:</b> to reset the scanned product so that the user can go to another experience </li>
+								 <li> <b>Help:</b> are answered by the hologram budtender (not implemented) </li>
+								 <li> <b>Discover:</b> a feature from the Android app that allows the user to browse through more products (not implemented)
+									 </li>
+					</ul>
+					</li>
+
+					<li><b>Gesture Touches</b>
+
+						<ul>
+									<li> <b>Transform:</b> transform moves the experience such that obstructive space can be moved so that the experience can be seen more clearly. This uses a 3 figure pan to move.
+ 								</li>
+									<li> <b>Scale:</b> scaling helps with being able to see specs of the physical product more closely and allows for obstructive space to be more easily viewable. This uses a pinch in and pinch out gesture.
+ 								</li>
+									<li> <b>Rotate:</b> rotate simply rotates the cannabis product such that the user can view specs about the potential physical properties of the product. Rotate uses a simply drag (only horizontally)
+										</li>
+					 </ul>
+
+
+					 </li>
+		 	</ol>
+
+
+<h4> Scripts + Programmer Notes: </h4>
+<br>
+
+<p> <b>Image Tracking / Scanning:</b> this is done using Unity’s ARFoundation in Image Tracking where images are simply uploaded to a reference library. Tracking to instantiate a prefab is achieved using Unity’s sample script TrackedImageInfoManager where depending on which image is tracked the corresponding prefab will be instantiated.
+</p>
+
+<p> <b>Tap To Place script:</b> uses raycasting to shoot toward the center of the AR camera to track anything trackable. Interaction is limited to everything within the trackable polygon and this script is complemented by a DisableVerticalPlace script (part of Unity’s sample code) to ensure only horizontal tracking is achieved. </p>
+
+<p> <b>Video Controller script:</b> a controller that sets video clips of budtender questions to the next or previous clip </p>
+
+<p> <b>Destroy a prefab:</b> The scan UI simply reloads the Scene which should destroys prefabs created from instantiated </p>
+
+<p> <b>Efficiency Notes:</b>
+UI could be instantiated and destroyed to improve efficiency as opposed to being set and turned active </p>
+
+<br>
+<h4> Video Editing  </h4>
+<br>
+<p> Shot multiple clips of me using Scanna AR and doing a screen recording to show the experience in more detail and another clip of me in 3rd person to show perspective as to how the app looks and feels on a mobile device (iPad).
+Edited clips together and compiled a pitch video and added some music to add more stimulation to the video. </p>
+
+<br>
+<h4> References </h4>
+<br>
+<div class="source-code">
+AR Foundation Samples <a href="https://github.com/Unity-Technologies/arfoundation-samples"> here </a>
+</div>
+
+<div class="source-code">
+Tap to Place script <a href="https://www.youtube.com/watch?v=Ml2UakwRxjk"> here </a>
+</div>
+
+
+									<br>
+									<br>
+
+									<h4 > Software </h4>
+					 			 <br>
+
+					 			 <img src="img/logos/Unity.png" width="85" style="margin-right: 10px;">
+					 			 <img src="img/logos/photoshop.png" width="65" style="margin-right: 10px;">
+								 <img src="img/logos/premiere-pro.png" width="65" style="margin-right: 10px;">
+					 			 <br>
+					 			 <br>
+					 			 <br>
+
+					 			 <h4 > Language </h4>
+					 			 <br>
+
+					 			 <img src="img/logos/Csharp.png" width="50" style="margin-right: 10px;">
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+	<!-- footer section start -->
+	<footer class="footer-section text-center">
+		<div class="container">
+			<h2 class="section-title mb-5">Let’s work together</h2>
+			<a href="" class="site-btn">Get in touch</a>
+			<div class="social-links">
+				<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span> </a>
+				<a href="https://www.youtube.com/channel/UCzfuPVQFwT4GPd5YwntBcQQ?view_as=subscriber"><span class="fa fa-youtube"></span></a>
+				<a href="https://github.com/jkvnguyen"><span class="fa fa-github"></span></a>
+			</div>
+			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen </a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</div>
+		</div>
+	</footer>
+	<!-- footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
