@@ -12,7 +12,7 @@
 html,
 body {
   height: 100%;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -37,6 +37,7 @@ h2 {
 p {
   font-size: 18px;
   /* color: #979797; */
+  letter-spacing: 1px;
   line-height: 1.8;
 }
 
