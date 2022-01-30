@@ -94,7 +94,7 @@ ol {
 }
 
 .section-title {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .section-title span {
@@ -375,7 +375,7 @@ ol {
 }
 
 .site-logo {
-  font-size: 24px;
+  font-size: 30px;
   padding-top: 20px;
   /* text-align: center; */
 }
@@ -508,7 +508,8 @@ ol {
 }
 
 .portfolio-meta p {
-  font-size: 14px;
+  margin-top: 1px;
+  font-size: 16px;
   color: #a6a6a6;
   margin-bottom: 0;
 }
