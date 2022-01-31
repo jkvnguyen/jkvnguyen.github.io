@@ -22,8 +22,8 @@ h5,
 h6 {
   color: #001418;
   margin: 0;
-  font-weight: 900;
-  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-family: 'Europa', sans-serif;
 }
 
 h2 {
@@ -74,11 +74,24 @@ ol {
   text-align: left;
 }
 
+.column-container {
+  display: table;
+}
+
+.three-column {
+  width: 33%;
+  float: left;
+  padding-right: 10px;
+  padding-top: 10px;
+  display: table-cell;
+}
+
 .column {
   width: 50%;
   float: left;
   padding-right: 10px;
   padding-top: 10px;
+  display: table-cell;
 }
 
 /*------------------------
