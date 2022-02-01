@@ -207,10 +207,10 @@ ol {
 /*=== Buttons ===*/
 .site-btn {
   display: inline-block;
-  font-size: 14px;
+  font-size: 20px;
   min-width: 140px;
   text-align: center;
-  padding: 15px 10px;
+  padding: 30px 10px;
   position: relative;
   color: #fff;
   border: none;
