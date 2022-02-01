@@ -837,4 +837,8 @@ Page Section
     margin-right: 10px;
     padding: 20px 0 5px;
   }
+
+  .column {
+    width: 100%;
+  }
 }
