@@ -122,6 +122,13 @@ ol {
 }
 
 .section-title {
+  /* font-size: 36px;
+  font-weight: 500;
+  width: 90%;
+  color: #979797; */
+}
+
+.portfolio-section .section-title{
   font-size: 36px;
   font-weight: 500;
   width: 90%;
@@ -813,10 +820,15 @@ Page Section
   }
   .section-title {
     font-size: 45px;
-    max-width: 400px;
-    width: 90%;
-    color: #979797;
+    
   }
+
+  .portfolio-section .section-title {
+      font-size: 45px;
+      max-width: 400px;
+      width: 90%;
+      color: #979797;
+    }
   .portfolio-filter {
     text-align: center;
   }
