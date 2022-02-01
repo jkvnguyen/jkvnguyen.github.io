@@ -126,6 +126,7 @@ ol {
   font-weight: 500;
   width: 90%;
   color: #979797; */
+  font-size: 45px;
 }
 
 .portfolio-section .section-title{
@@ -547,7 +548,7 @@ ol {
 
 .portfolio-meta p {
   margin-top: 1px;
-  font-size: 16px;
+  font-size: 18px;
   color: #a6a6a6;
   margin-bottom: 0;
 }
@@ -820,7 +821,7 @@ Page Section
   }
   .section-title {
     font-size: 45px;
-    
+
   }
 
   .portfolio-section .section-title {
