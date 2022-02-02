@@ -423,7 +423,7 @@ ol {
 }
 
 .site-logo {
-  font-size: 78px;
+  font-size: 60px;
   padding-top: 20px;
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
@@ -439,7 +439,7 @@ ol {
 
 .main-menu ul li a {
   display: inline-block;
-  font-size: 24px;
+  font-size: 22px;
   color: #001418;
   margin-left: 15px;
   margin-right: 10px;
