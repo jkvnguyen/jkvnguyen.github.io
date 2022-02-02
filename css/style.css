@@ -9,10 +9,16 @@
 /* Template default CSS
 /*----------------------------------------*/
 
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 html,
 body {
   height: 100%;
-  font-family: 'Roboto';
+  font-family: 'Inter';
   /* font-family: 'Europa', sans-serif; */
 }
 
@@ -45,7 +51,6 @@ h6 {
 
 p {
   font-size: 22px;
-  letter-spacing: 1px;
   line-height: 1.8;
   color: #333333;
 }
@@ -76,7 +81,6 @@ ul {
   margin: 0;
   list-style: inside;
   font-size: 22px;
-  letter-spacing: 1px;
   line-height: 1.8;
 }
 
