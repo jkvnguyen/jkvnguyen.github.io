@@ -122,7 +122,7 @@ ol {
 }
 
 .pt100 {
-  padding-top: 140px;
+  padding-top: 100px;
 }
 
 .set-bg {
@@ -417,7 +417,7 @@ ol {
     Header Section
 --------------------------*/
 .header-section {
-  padding-top: 30px;
+  padding-top: 45px;
   /* padding-bottom: 0px; */
   position: relative;
 }
