@@ -423,9 +423,10 @@ ol {
 }
 
 .site-logo {
-  font-size: 60px;
+  font-size: 78px;
   padding-top: 20px;
   font-family: 'Amatic SC', cursive;
+  font-weight: bold;
 }
 
 .main-menu ul {
