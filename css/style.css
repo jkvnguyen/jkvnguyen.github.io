@@ -51,7 +51,6 @@ h6 {
 
 p {
   font-size: 22px;
-  line-height: 1.8;
   color: #333333;
 }
 
@@ -81,7 +80,6 @@ ul {
   margin: 0;
   list-style: inside;
   font-size: 22px;
-  line-height: 1.8;
 }
 
 ol {
