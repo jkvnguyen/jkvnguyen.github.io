@@ -46,6 +46,7 @@ p {
   font-size: 22px;
   letter-spacing: 1px;
   line-height: 1.8;
+  color: #333333;
 }
 
 .highlight {
@@ -75,6 +76,7 @@ ul {
   list-style: inside;
   font-size: 22px;
   letter-spacing: 1px;
+  line-height: 1.8;
 }
 
 ol {
