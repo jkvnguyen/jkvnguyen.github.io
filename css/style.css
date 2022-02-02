@@ -837,7 +837,7 @@ Page Section
   .portfolio-section .section-title {
       font-size: 45px;
       max-width: 400px;
-      width: 90%;
+      width: 100%;
       color: #979797;
     }
   .portfolio-filter {
