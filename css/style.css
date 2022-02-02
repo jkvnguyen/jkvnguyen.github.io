@@ -38,7 +38,7 @@ h6 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 36px;
 }
 
 h2 {
@@ -139,7 +139,7 @@ ol {
 }
 
 .portfolio-section .section-title{
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 500;
   width: 90%;
   color: #979797;
@@ -423,7 +423,7 @@ ol {
 }
 
 .site-logo {
-  font-size: 60px;
+  font-size: 50px;
   padding-top: 20px;
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
@@ -439,7 +439,7 @@ ol {
 
 .main-menu ul li a {
   display: inline-block;
-  font-size: 22px;
+  font-size: 20px;
   color: #001418;
   margin-left: 15px;
   margin-right: 10px;
