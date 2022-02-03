@@ -38,7 +38,7 @@ h6 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 h2 {
@@ -139,9 +139,9 @@ ol {
 }
 
 .portfolio-section .section-title{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
-  width: 90%;
+  width: 70%;
   color: #979797;
 }
 
