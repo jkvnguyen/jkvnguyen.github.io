@@ -9,10 +9,17 @@
 /* Template default CSS
 /*----------------------------------------*/
 
+/* Fonts */
+
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
+}
+
+@font-face {
+  src: url(fonts/SFProDisplay-Regular.ttf);
+  font-family: 'SFProDisplay';
 }
 
 
@@ -143,6 +150,7 @@ ol {
   font-weight: 500;
   width: 70%;
   color: #979797;
+  font-family: 'SFProDisplay';
 }
 
 .section-title span {
