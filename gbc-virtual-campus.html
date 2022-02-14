@@ -6,15 +6,49 @@
 	<meta name="description" content="Jeremy Nguyen - Portfolio">
 	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Scripts -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header-section").style.top = "0px";
+  } else {
+    document.getElementById("header-section").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("main-menu");
+var btns = header.getElementsByClassName("a");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) {
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
 	<!-- Favicon -->
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
 
@@ -24,25 +58,25 @@
 	<![endif]-->
 
 </head>
-<body>
+<body class="body-pad">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
 
 	<!-- header section start -->
-	<header class="header-section">
+	<header id="header-section">
 		<div class="container-fluid">
 			<div class="row">
 				<a href="https://jkvnguyen.github.io/" class="logo">
-					<h2 class="site-logo">jeremy nguyen</h2>
+					<h2 class="site-logo">JN</h2>
 				</a>
 				<div class="col home-2 text-left text-md-right">
 					<nav class="main-menu">
 						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="resume.pdf">Resume</a></li>
-							<li><a href="mailto:jkvnguyen@hotmail.com">Talk to Me</a></li>
+							<li><a href="about.html">about</a></li>
+							<li><a href="resume.pdf">resume</a></li>
+							<li><a href="mailto:jkvnguyen@hotmail.com">talk to me</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -55,109 +89,162 @@
 	</header>
 	<!-- header section end -->
 
-<br>
+	<!-- intro section start -->
+	<div style="padding-bottom: 130px;">
+	</div>
+	<!-- intro section end -->
 
 
-<section class="intro-section">
-	<div class="container text-center">
-		<div class="row">
-			<div class="col-xl-10 offset-xl-1">
+
+	<section class="page-section">
+		<div class="container-fluid p-0">
+			<div class="row">
+
+				<div class="col-lg-6">
 
 
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
+
 
 					<h3> George Brown College - Virtual Campus </h3>
 
 					<br>
 					<br>
+					<div class="breakdown-row">
+						<div class="breakdown-column" style="width: 25% !important;">
+							<b> role </b>
+							<p>game designer, ux designer
+							</p>
+						</div>
+						<div class="breakdown-column" style="width: 40% !important;">
+							<b> skills</b>
+							<p>figma, unreal engine 4</p>
+						</div>
+						<div class="breakdown-column">
+							<b> timeline </b>
+							<p>3 months</p>
+						</div>
+					</div>
 
-					<h4> Overview </h4>
 					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+
+
+					<h4> overview </h4>
 
 					<p> A life simulation game of George Brown College’s campus that enhances the Blackboard learning experience where players build and customize cosmetics and furnishings for a custom avatar. Gather rewards by participating in class and completing course content, and promote personal brand by sharing portfolio content to friends and colleagues.
   				</p>
 
 					<br>
+						</div>
 
-					<h5 > What I did: </h5>
+						<div class="col-lg-5 offset-lg-1">
 
-					<br>
-					<ul>
-						<li> Designed the interface and user experience for a life simulation game of George Brown College’s campus. </li>
+							<br>
+							<br>
+							<br>
+							<br>
 
-						<li> Documented and maintained design documents, bug reports, and game spreadsheets.  </li>
-						<li> Implemented the game menu UIs in Unreal Engine 4. </li>
-					</ul>
+						<img src="img/gbc/1.png">
 
-					<br>
-					<br>
+						<br>
 
-					<h5 > Style Guide </h5>
-					<br>
+						</div>
 
-					<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGBvDVNx3VtKQdIpJrm5BLJ%2FGeorge-Brown-Virtual-Campus%3Fnode-id%3D22%253A99" allowfullscreen></iframe>
-
-					<br>
-					<br>
-
-					<h5 > Menu Interfaces </h5>
-					<br>
-
-					<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGBvDVNx3VtKQdIpJrm5BLJ%2FGeorge-Brown-Virtual-Campus%3Fnode-id%3D643%253A313" allowfullscreen></iframe>
-
-					<br>
-					<br>
-
-					<h5 > Onboarding </h5>
-					<br>
-
-					<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGBvDVNx3VtKQdIpJrm5BLJ%2FGeorge-Brown-Virtual-Campus%3Fnode-id%3D706%253A0" allowfullscreen></iframe>
-
-					<br>
-					<br>
-
-					<h5 > Player-to-Player Interaction </h5>
-					<br>
-
-					<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGBvDVNx3VtKQdIpJrm5BLJ%2FGeorge-Brown-Virtual-Campus%3Fnode-id%3D707%253A27" allowfullscreen></iframe>
-
-					<br>
-					<br>
-
-					<h5 > Character Customization </h5>
-					<br>
-
-					<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGBvDVNx3VtKQdIpJrm5BLJ%2FGeorge-Brown-Virtual-Campus%3Fnode-id%3D366%253A1712" allowfullscreen></iframe>
+						<div class="col-lg-11">
+							<h4> what i did </h4>
 
 
+							<ul>
+								<li> Designed the interface and user experience for a life simulation game of George Brown College’s campus. </li>
 
-					<div style="width: 70%; margin: 0 auto;">
+								<li> Documented and maintained design documents, bug reports, and game spreadsheets.  </li>
+								<li> Implemented the game menu UIs in Unreal Engine 4. </li>
+							</ul>
+
+							<br>
+							<br>
+
+							<h4> style guide </h4>
+
+							<p> Game's style for text, colours, and buttons, follows mostly the George Brown College's <a href="https://www.georgebrown.ca/basic-style-guide">style guide</a>. A darken blue was added for the dashboard to make dark themed interface. Orange is used as a secondary colour to compliment the blue.</p>
+							<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="550" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGBvDVNx3VtKQdIpJrm5BLJ%2FGeorge-Brown-Virtual-Campus%3Fnode-id%3D22%253A99" allowfullscreen></iframe>
+
+							<br>
+							<br>
+							<br>
+
+
+							<h4> account + login </h4>
+							<p>In order to access the game, players must be members of George Brown College either as students, professors, or guests (made by admin). Accounts are connected to GBC's Blackboard. </p>
+
+							<img src="img/gbc/2.png" width="80%";>
+							<br>
+							<br>
+
+								<p> The login screen is the default screen that appears when the player first boots up the game. Players must have an existing Blackboard account in order to log into the game. Players without an account are required to sign up before they can access the game which is provided by the school administration. Login information provided is an email (consisting of a George Brown Number and email) and a password. The login screen features an option to quit the game and/or pull up a help section (which pulls up a web browser).</p>
 
 
 
 
 
-													 </div>
 
-													 <br>
-													 <br>
-													 <br>
-													 <br>
-													 <br>
-													 <br>
+							<br>
+							<br>
 
 
-													 <h4 class="subheader"> Software </h4>
-													 <br>
 
-													 <img src="img/logos/figma.png" width="70" style="margin-right: 10px;">
-													 <img src="img/logos/photoshop.png" width="65" style="margin-right: 10px;">
+							<h4> menu interfaces </h4>
 
-			</div>
+
+							<p> The game menu consists of a series of buttons and interfaces the player can select and tab from to view announcements, events, messages, Blackboard information, and edit settings.
+</p>
+							<p> Selectable Interfaces include: Messages, Grades, Objective, Calendar, Map, Voice Chat, Friends, Settings, Exit.</p>
+							<p> Each time a player selects one of these interfaces, the menu tabs out to the selected interface with its content.</p>
+
+							<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="550" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGBvDVNx3VtKQdIpJrm5BLJ%2FGeorge-Brown-Virtual-Campus%3Fnode-id%3D643%253A313" allowfullscreen></iframe>
+
+							<br>
+							<br>
+							<br>
+
+							<h4> onboarding + tutorial</h4>
+							<p> Once the player has successfully logged into their account, they are given a simple welcome message. A tutorial prompt quickly follows after to either play or skip the tutorial. The welcome message and tutorial prompt are displayed on top of the player’s screen with only a single HUD on the bottom right to allow the player to go next.
+							</p>
+
+							<p> Tutorial covers basic playthrough to gather currency, purchasing items, and interacting in a classroom setting. </p>
+
+							<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="550" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGBvDVNx3VtKQdIpJrm5BLJ%2FGeorge-Brown-Virtual-Campus%3Fnode-id%3D706%253A0" allowfullscreen></iframe>
+
+							<br>
+							<br>
+							<br>
+
+							<h4> player-to-player interaction </h4>
+							<p> Players can interact with one another by using emotes, game chat, voice chat, and through live classes where they can interact with professors to answer questions on Blackboard.</p>
+
+							<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="550" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGBvDVNx3VtKQdIpJrm5BLJ%2FGeorge-Brown-Virtual-Campus%3Fnode-id%3D707%253A27" allowfullscreen></iframe>
+
+							<br>
+							<br>
+							<br>
+
+							<h4> character + avatar customization </h4>
+							<p> Players can customize their character’s facial/head features by going near their designated locker.</p>
+							<p> Outfits can be purchased from stores located around the campus and added to your inventory to wear and customized.</p>
+
+							<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="550" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGBvDVNx3VtKQdIpJrm5BLJ%2FGeorge-Brown-Virtual-Campus%3Fnode-id%3D366%253A1712" allowfullscreen></iframe>
+
+						</div>
+
+
+
+
+
+
+
 		</div>
 	</div>
 </section>
@@ -183,19 +270,27 @@
 
 
 	<!-- footer section start -->
-	<footer class="footer-section text-center">
-		<div class="container">
-			<h2 class="section-title mb-5">Let’s work together</h2>
-			<a href="mailto:jkvnguyen@hotmail.com" class="site-btn">Get in touch</a>
-			<div class="social-links">
-				<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span> </a>
-				<a href="https://www.youtube.com/channel/UCzfuPVQFwT4GPd5YwntBcQQ?view_as=subscriber"><span class="fa fa-youtube"></span></a>
-				<a href="https://github.com/jkvnguyen"><span class="fa fa-github"></span></a>
-			</div>
-			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen </a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	<footer class="footer-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8">
+					<h2 class="footer-message">let's get in touch</h2>
+				</div>
+				<div class="col-md-4 text-md-right">
+					<div class="social-links">
+						<!-- <a href=""><span class="fa fa-pinterest"></span></a> -->
+						<!-- <p>get in touch <i class="fa fa-long-arrow-down" style="font-size:24px"></i> </p>  -->
+						<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span></a>
+						<a href="mailto:jkvnguyen@hotmail.com"><span class="fa fa-envelope-o"></span></a>
+						<!-- <a href="mailto:jkvnguyen@hotmail.com" class="site-btn">get in touch</a> -->
+
+						<!-- <a href=""><span class="fa fa-twitter"></span></a> -->
+					</div>
+					<div class="copyright">
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen</a> -->
 </div>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<!-- footer section end -->
