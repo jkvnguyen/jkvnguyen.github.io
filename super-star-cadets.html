@@ -4,20 +4,51 @@
 	<title>Jeremy Nguyen - Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Jeremy Nguyen - Portfolio">
-	<meta name="keywords" content="portfolio, riddle, onepage, creative, html">
+	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Scripts -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header-section").style.top = "0px";
+  } else {
+    document.getElementById("header-section").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("main-menu");
+var btns = header.getElementsByClassName("a");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) {
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
 	<!-- Favicon -->
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
 
@@ -27,25 +58,25 @@
 	<![endif]-->
 
 </head>
-<body>
+<body class="body-pad">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
 
 	<!-- header section start -->
-	<header class="header-section">
+	<header id="header-section">
 		<div class="container-fluid">
 			<div class="row">
 				<a href="https://jkvnguyen.github.io/" class="logo">
-					<h2 class="site-logo">jeremy nguyen</h2>
+					<h2 class="site-logo">JN</h2>
 				</a>
 				<div class="col home-2 text-left text-md-right">
 					<nav class="main-menu">
 						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="resume.pdf">Resume</a></li>
-							<li><a href="mailto:jkvnguyen@hotmail.com">Talk to Me</a></li>
+							<li><a href="about.html">about</a></li>
+							<li><a href="resume.pdf">resume</a></li>
+							<li><a href="mailto:jkvnguyen@hotmail.com">talk to me</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -58,246 +89,158 @@
 	</header>
 	<!-- header section end -->
 
-<br>
+	<!-- intro section start -->
+	<div style="padding-bottom: 130px;">
+	</div>
+	<!-- intro section end -->
 
 
 
+	<section class="page-section">
+		<div class="container-fluid p-0">
+			<div class="row">
 
-<section class="intro-section">
-	<div class="container-fluid p-0">
-		<div class="row">
-			<div class="">
+				<div class="col-lg-6">
 
-					<img src="img/super-star-cadets/header.png">
+
+					<h3> Mysterious Package Company</h3>
+					<br>
+					<br>
+
+					<div class="breakdown-row">
+					  <div class="breakdown-column" style="width: 25% !important;">
+							<b> role </b>
+							<p>developer
+							</p>
+					  </div>
+					  <div class="breakdown-column">
+							<b> skills</b>
+							<p>unity, vuforia, C#</p>
+					  </div>
+					  <div class="breakdown-column">
+							<b> timeline </b>
+ 							<p>3 months</p>
+					  </div>
+					</div>
 
 					<br>
 					<br>
 					<br>
 					<br>
 
+					<h4> summary </h4>
 
+					<p>A companion Augmented Reality app for the puzzle game <a href="https://mysteriouspackage.com/products/the-disappearance-of-cadet-turner"><i>The Disappearance of Cadet Turner</i></a> I developed for Mysterious Package Company.
 
-					<h4> The Project </h4>
+					</p>
+
 					<br>
-					 <p>
-						 A companion Augmented Reality app for the puzzle game <a href="https://mysteriouspackage.com/products/the-disappearance-of-cadet-turner"><i>The Disappearance of Cadet Turner</i></a>.
-					 </p>
+					<h4> background </h4>
 
+					<p>At Patio Interactive Inc., we collaborated with Mysterious Package Company (MPC) to design and develop a mail order mystery box.
 
+					</p>
 
 
+					<p>
+							MPC, a experiential service, creates mailing packages that includes a combination of narratives, items, and puzzles that players can interact with and try to solve.
+					</p>
 
+					<p>
+							For this collaboration, MPC wanted to add Augmented Reality to their title, The Disappearance of Cadet Turner, and add another layer of immersion and interactivity to their gameplay.
+					</p>
+					<br>
 
+				</div>
 
+				<div class="col-lg-5 offset-lg-1">
 
-						 <br>
+					<img src="img/super-star-cadets/1.png">
 
-			 	 <!-- <h5> Downloadable on:  </h5>
-			 	<br>
+					<br>
 
-			 	<div style="display: inline;">
-			 		 <p> <i> App Store </i> <a href="https://apps.apple.com/ca/app/super-star-cadets/id1489218232"> <img src="img/logos/app-store.jpg" width=30> </a> </p>
-			 	</div>
+				</div>
 
-			 	<div style="display: inline;">
-			 		 <p> <i> Play Store </i> <a href="https://play.google.com/store/apps/details?id=com.mysteriouspackagecompany.superstarcadets&hl=en_CA&gl=US"> <img src="img/logos/google-play.jpg" width=30> </a> </p>
-			 	</div> -->
+			<div class="col-lg-11">
 
+				<h4> what i did </h4>
 
+				<ul>
+					<li>	Implemented the app, used conjointly with a badge, polaroid pictures, and comic book, that allowed users to unlock hidden AR interactions by scanning over objects to solve the game.
+				</li>
+					<li>	Developed a singleton model for an audio maze minigame that handled events based on a cassette player controls where playing certain timed sequences returned a clue used to solve the game.
+				</li>
+					<li>		Scaled and added UI elements, videos, sound effects, and animations to scenes and models that enhanced the overall experience to be more engaging.
+			</li>
+					<li>			Added a save/load system and a reset function for replayablility.
+		</li>
+					<li>		Performed extensive user testing and quality assurance to device scaling and model game states.
+			</li>
+					<li>		Used Unity framework Vuforia for image targets on the badge, polaroid pictures, and comic book.
+			</li>
+					<li>		Published the app to the App Store and Google Play.			</li>
+				</ul>
 
 
 
+				<br>
+				<br>
+							<img src="img/super-star-cadets/2.png">
 
+				<br>
+				<br>
+				<br>
 
-							<div class="column-container">
-								 <div class="column" style="width: 50% !important; padding-right: 5%;">
-									 <h4> Case Study </h4>
-									 <br>
-
-												 <p >
-
-													 Incorporating Augmented Reality as part of puzzle board game with mechanics to that similar of an escape room.
-
-													</p>
-								 </div>
-
-
-
-								 <div class="column"style="width: 15% !important">
-									 										 				 <h4> Role </h4>
-																							 <br>
-									 														 <p> Developer </p>
-
-								</div>
-
-								<div class="column"style="width: 15% !important">
-									<h5> Download: </h5>
-									<br>
-
-									 <p>  <a href="https://apps.apple.com/ca/app/super-star-cadets/id1489218232"> <img src="img/logos/app-store.jpg" width=30> </a>
-												<a href="https://play.google.com/store/apps/details?id=com.mysteriouspackagecompany.superstarcadets&hl=en_CA&gl=US"> <img src="img/logos/google-play.jpg" width=30> </a>
-										</p>
-
-							 </div>
-
-							 </div>
-
-
-
-
-
-
-							 <br>
-
-							 <div>
-
-								 <h4> The Challenge </h4>
-
-								<br>
-
-
-							 <p>
-								 <ul>
-
-									 <li> Implement single AR image target scanning </li>
-									 <li> Design the structure for an audio cipher</li>
-									 <li> Implement the condition for AR scanning between multiple objects </li>
-								 </ul>
-							 </p>
-
-
-							 </div>
-
-
-								 <br>
-								 <br>
-
-
-							 </div>
-
-							 <div class="row">
-  						 			<div class="column">
-												<img src="img/super-star-cadets/comic.png">
-										</div>
-
-										<div class="column">
-												<img src="img/super-star-cadets/comic2.png" >
-										</div>
-
-										<div class="column">
-												<img src="img/super-star-cadets/all.png" >
-										</div>
-
-										<div class="column">
-												<img src="img/super-star-cadets/all.png">
-										</div>
-
-									</div>
-
-
-							 </div>
-
-
-
-
-
-						<br>
-						<br>
-						<br>
-
-
-
-
-
-
-														 <h4> What I did: </h4>
-														 <br>
-
-														 <div style="text-align: left; margin: 0 auto;">
-
-														 <ul>
-														 <li> Implemented the app, used conjointly with a badge, polaroid pictures, and comic book, that allowed users to unlock hidden AR interactions by scanning over objects to solve the game.
-														 </li>
-
-														 <li> Developed a singleton model for an audio maze minigame that handled events based on a cassette player controls where playing certain timed sequences returned a clue used to solve the game.  </li>
-														 <li> Scaled and added UI elements, videos, sound effects, and animations to scenes and models that enhanced the overall experience to be more engaging.</li>
-														 <li> Added a save/load system and a reset function for replayablility. </li>
-														 <li> Performed extensive user testing and quality assurance to device scaling and model game states.</li>
-														 <li> Used Unity framework Vuforia for image targets on the badge, polaroid pictures, and comic book.</li>
-														 <li> Published the app to the App Store and Google Play.</li>
-
-														 </ul>
-													 </div>
-
-													 <br>
-													 <br>
-													 <br>
-													 <br>
-
-
-<div class="image-gallery-row">
-  <div class="image-gallery-column">
-			<img src="img/super-star-cadets/bw1.png" height=500 style="margin-bottom: 10px;">>
-		 	<img src="img/super-star-cadets/bw2.png" height=500 style="margin-bottom:10px;">
-  </div>
-  <div class="image-gallery-column">
-										 					<img src="img/super-star-cadets/bw3.png" width=400>
-										 					<img src="img/super-star-cadets/bw4.png" width=400>
-										 					<img src="img/super-star-cadets/bw5.png" width=400>
-  </div>
-
-</div>
-
-<!--
-													 <img src="img/super-star-cadets/bw1.png" height=500 style="margin-bottom: 10px;">>
-								 					<img src="img/super-star-cadets/bw2.png" height=500 style="margin-bottom:10px;">
-
-
-								 					<img src="img/super-star-cadets/bw3.png" width=400>
-								 					<img src="img/super-star-cadets/bw4.png" width=400>
-								 										<img src="img/super-star-cadets/bw5.png" width=400> -->
+				<h4> download and play </h4>
+				<p> <i>The Disappearance of Cadet Turner </i> is available on <a href="https://mysteriouspackage.com/products/the-disappearance-of-cadet-turner">MPC</a>! Check it out on their site and on the <a href="https://apps.apple.com/ca/app/super-star-cadets/id1489218232">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.mysteriouspackagecompany.superstarcadets&hl=en_CA&gl=US">Google Play.</a> </p>
 
 
 			</div>
+
+
+			</div> <!-- row -->
+
+
+
+
+
 		</div>
-	</div>
-</section>
 
 
 
 
-	<div class="container text-center">
-		<div class="row">
-			<div class="col-xl-10 offset-xl-1">
 
-
-
-
-			</div>
-		</div>
-	</div>
-
-
+	</section>
+	<!-- page section end -->
 
 
 
 	<!-- footer section start -->
-	<footer class="footer-section text-center">
-		<div class="container">
-			<h2 class="section-title mb-5">Let’s work together</h2>
-			<a href="mailto:jkvnguyen@hotmail.com" class="site-btn">Get in touch</a>
-			<div class="social-links">
-				<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span> </a>
-				<a href="https://www.youtube.com/channel/UCzfuPVQFwT4GPd5YwntBcQQ?view_as=subscriber"><span class="fa fa-youtube"></span></a>
-				<a href="https://github.com/jkvnguyen"><span class="fa fa-github"></span></a>
-			</div>
-			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen </a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	<footer class="footer-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8">
+					<h2 class="footer-message">let's get in touch</h2>
+				</div>
+				<div class="col-md-4 text-md-right">
+					<div class="social-links">
+						<!-- <a href=""><span class="fa fa-pinterest"></span></a> -->
+						<!-- <p>get in touch <i class="fa fa-long-arrow-down" style="font-size:24px"></i> </p>  -->
+						<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span></a>
+						<a href="mailto:jkvnguyen@hotmail.com"><span class="fa fa-envelope-o"></span></a>
+						<!-- <a href="mailto:jkvnguyen@hotmail.com" class="site-btn">get in touch</a> -->
+
+						<!-- <a href=""><span class="fa fa-twitter"></span></a> -->
+					</div>
+					<div class="copyright">
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen</a> -->
 </div>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<!-- footer section end -->
+
 
 
 	<!--====== Javascripts & Jquery ======-->

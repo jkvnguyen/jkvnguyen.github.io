@@ -4,23 +4,52 @@
 	<title>Jeremy Nguyen - Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Jeremy Nguyen - Portfolio">
-	<meta name="keywords" content="portfolio, riddle, onepage, creative, html">
+	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Scripts -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header-section").style.top = "0px";
+  } else {
+    document.getElementById("header-section").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("main-menu");
+var btns = header.getElementsByClassName("a");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) {
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
 	<!-- Favicon -->
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-
 
 
 	<!--[if lt IE 9]>
@@ -29,25 +58,25 @@
 	<![endif]-->
 
 </head>
-<body>
+<body class="body-pad">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
 
 	<!-- header section start -->
-	<header class="header-section">
+	<header id="header-section">
 		<div class="container-fluid">
 			<div class="row">
 				<a href="https://jkvnguyen.github.io/" class="logo">
-					<h2 class="site-logo">jeremy nguyen</h2>
+					<h2 class="site-logo">JN</h2>
 				</a>
 				<div class="col home-2 text-left text-md-right">
 					<nav class="main-menu">
 						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="resume.pdf">Resume</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="about.html">about</a></li>
+							<li><a href="resume.pdf">resume</a></li>
+							<li><a href="mailto:jkvnguyen@hotmail.com">talk to me</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -60,258 +89,218 @@
 	</header>
 	<!-- header section end -->
 
-<br>
+	<!-- intro section start -->
+	<div style="padding-bottom: 130px;">
+	</div>
+	<!-- intro section end -->
 
-<section class="intro-section">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="">
+	<section class="page-section">
+		<div class="container-fluid p-0">
+			<div class="row">
+				<div class="col-lg-6">
 
+					<h3> Lunar Lander+</h3>
+					<br>
+					<br>
 
-				<img src="img/lunar-lander/header.png" >
+					<div class="breakdown-row">
+						<div class="breakdown-column" style="width: 25% !important;">
+							<b> role </b>
+							<p>designer, developer
+							</p>
+						</div>
+						<div class="breakdown-column" style="width: 40% !important;">
+							<b> skills</b>
+							<p>user research, ui/ux, game design, figma, android, java</p>
+						</div>
+						<div class="breakdown-column">
+							<b> timeline </b>
+							<p>6 weeks</p>
+						</div>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
 
-				<br>
-				<br>
-				<br>
-				<br>
-				<h3> Lunar Lander </h3>
-
-				<br>
-				<br>
-
-				<div class="column-container">
-					 <div class="column" style="width: 40% !important; padding-right: 7%;">
-						 <h4> Case Study </h4>
-						 <br>
-
-									 <p >
-
-										 Gaming Under the Influence: The Effects of Social Comparison on Task Performance.
-
-										</p>
-					 </div>
-
-
-
-					 <div class="column"style="width: 20% !important; padding-right: 7%;">
-																				 <h4> Role </h4>
-																				 <br>
-																				 <p> UX Researcher, Developer </p>
+					<h4 > summary </h4>
+					<p> Conducted a user research on the influence of social comparison on task performance and developed an extension of the game Lunar Lander on the android phone.
+					</p>
+					<br>
 
 					</div>
 
-					<div class="column"style="width: 15% !important">
-						<h4> Paper </h4>
+					<div class="col-lg-5 offset-lg-0">
+
 						<br>
-						<i> <b> <a style="margin-left: -5px;" href="https://github.com/jkvnguyen/LunarLanderPlus/blob/master/project.pdf"> <img src="img/logos/pdf.png" width="50"> </a> </b> </i>
+						<br>
+						<br>
+					<img src="img/lunar-lander/1.png">
 
-				 	</div>
+					<br>
 
-					<div class="column"style="width: 15% !important; padding-right: 7%;">
-			 																 <h4> Timeline </h4>
-			 																 <br>
-			 																 <p> 6 weeks </p>
+					</div>
 
-			 		</div>
+					<div class="col-lg-11">
 
-				</div> <!-- column container -->
+						<h4 > background </h4>
 
-				<br>
+						<p>
+						In most multiplayer games, the leaderboard can be used as an indicator to see the performances of players. A leaderboard can show score, the amount of kills ,etc. It can let one know that they are improving, getting worse, or just unlucky. The leaderboard can let you know if you are against good or bad players. And sometimes that can influence the way you play. In this case study, I wanted to research if players were affected by looking at their own or other player’s stats.
+						</p>
 
-				<h4> About </h4>
+						<br>
+						<h4> what i did </h4>
 
-				<br>
+							<ul>
+									<li> Conducted a series of surveys to gather and collect data on participants to determine external factors that may affect performance.</li>
+									<li>Extended an existing Android implementation of the game Lunar Lander to collect quantitive data.</li>
+									<li>Redesigned the game's basic game mechanics to accomodate for the comparative evaluation between two different interfaces.</li>
+									<li>Designed and updated game's interface and design to add a more aethestically pleasing experience and game flow to fit the experiment.</li>
 
-				<p>Lunar Lander Plus is an Android application that is an extension of the game Lunar Lander by Altari. Application was built as part of a research paper; to determine if social comparision influences in-game performance of players. Results revealed that players with leaderboard accessibility performed with a higher scores than players without.
-				</p>
+							</ul>
+							<br>
+
+							<h4> pre-experiment questionnaire</h4>
+							<p> A questionnaire was set up for the experiment to gather information that may affect performance. Factors such as time on computer, internet, and mobile were all considered and observed.</p>
+							<br>
 
 
+					</div>
 
 
-<br>
+					<div class="col-lg-6">
 
+						<h4> start + setup </h4>
+						<p> To make the experience more game-like, I redesigned the interface into a game menu and improved the overall user flow. Rather than hand the game over to participants after inputting the values to be recorded, I wanted the user to feel like they are playing a game and not feel like they are partaking in an experiment as to not influence their results. I would add a game menu to the original app that the user can select ‘PLAY’ or ‘QUIT’ from, and the ‘SETUP’ would serve as an option meant for researchers.</p>
 
-			 </p>
+						<p>
+							To add from the original app, I would also try making the game from a locked portrait view to a locked landscape. This is give the game more landing spaces and allow the user to have more interesting gameplay.
+						</p>
+					</div>
 
-				<div class="source-code">
-					<a href="https://github.com/jkvnguyen/LunarLanderPlus"> Source code </a>
+					<div class="col-lg-5 offset-lg-1">
+
+					<img src="img/lunar-lander/2.png">
+
+					<br>
+					<br>
+					<br>
 				</div>
 
-				<br>
 
-
-
-				<br>
-
-				<h4> What I did: </h4>
-			  <br>
-
-			  <div style="text-align: left; margin: 0 auto;">
-
-			  <ul>
-
-				  <li> Conducted a series of surveys to gather and collect data on participants to determine external factors that may affect performance. </li>
-				  <li> Extended an existing Android implementation of the game Lunar Lander to collect quantitive data. </li>
-				  <li> Redesigned the game's basic game mechanics to accomodate for the comparative evaluation between two different interfaces. </li>
-				  <li> Updated game's UI for leaderboard options and implemented score systems and levels.</li>
-
-			  </ul>
-
-
-				<br>
-				<br>
-
-				<div style="float: left;">
-				<h4> How to Play? </h4>
-				<br>
-
-				<p> Successfully land the Lunar Lander on the platform. (Sounds easy right?) </p>
+				<div class="col-lg-6">
+						<img src="img/lunar-lander/3.png">
+						<br>
+						<br>
+						<br>
 
 				</div>
 
-											<br>
+				<div class="col-lg-5 offset-lg-1">
+					<br>
+				<p> <b>PLAY</b> loads the player into the game with all the participant data via ‘SETUP’. </p>
+				<p> <b>SETUP</b> loads the setup page and allows inputs to be adjusted by the researcher based on the trial. Once all settings for setup are saved, exiting will return back to the start menu. </p>
+				<p> <b>QUIT</b> simply exits the app.</p>
 
-									<img src="img/lunar-lander/win.png" style="margin: 5px 5px 5px 0px" width=300>
+			</div>
 
-																		<br>
-																			<br>
+			<div class="col-lg-6">
+					<img src="img/lunar-lander/4.png">
+			</div>
 
-									<h4> The Landing </h4>
+			<div class="col-lg-5 offset-lg-1">
 
-									<br>
-									<p> Successful landing are determined by landing speeds and angles. Not landing perpendicularly will result in a failed landing. </p>
-									<br>
+			<p> <b>PARTICIPANT CODE</b> is the participant number.</p>
+			<p> <b>SESSION CODE</b> is the number for the session. </p>
+			<p> <b>GROUP CODE</b> refers to the two study groups: leaderboard vs. non.</p>
+			<p> <b>LIVES</b> is the number of attempts each user gets if they fail a landing. The default is 3 and is what is being used for the experiment. The max is 10, min is 1.</p>
+			<p> <b>LEADERBOARD</b> can set to on or off.</p>
+		</div>
 
-										<div class="pic-center">
-											<img src="img/lunar-lander/badspeed.png" style="max-width: 250px;">
-											<img src="img/lunar-lander/miss.png" style="max-width: 250px;">
-											<img src="img/lunar-lander/offscreen.png" style="max-width: 250px;">
-											<img src="img/lunar-lander/badangle.png" style="max-width: 250px;">
-									 </div>
+		<div class="col-lg-12">
+			<br>
+			<br>
+			<h4 > game rules + controls </h4>
+			<br>
+			<img src="img/lunar-lander/5.png">
+		</div>
 
-									 <br>
-									 <br>
+		<div class="col-lg-11">
+			<br>
+			<p>
+				Pressing ‘PLAY’ loads the participants into the game where they can begin scoring points. Successful landing on marked areas with _X will score the player points based on the landing location. Successfully landing a lunar lander is determined by which angle the lander falls. If the angle is perfectly orthogonal, the player will score perfect points. Angles that are between 45-90 degrees of the lander will count as a successful land and count as scoring points. Angles least close to 90 degrees will have deducted score. Successful landings will result in the start of a new level and increased difficulty. Angles less than 45 degrees will count as unsuccessful landings. Unsuccessful landings decrement lives by 1. Scores are also influenced by the amount of time and remaining fuel.
 
-									 <ul style="list-style: inside;">
-										<li> Acceptable landing speed is shown as green. Speeds that are in excess are red and will result in a crash. </li>
-										<li> Missing the landing pad will result in a crash. Going offscreen also counts as a crash (currently only horizontally). </li>
-										<li> Landing angles on touchdown that are too severe are registered as a crash.  </li>
-									</ul>
+			</p>
+		</div>
 
-									<br>
+		<div class="col-lg-11">
+			<br>
+			<img src="img/lunar-lander/6.png">
+			<br>
+			<br>
 
-									<p>
-									New levels are available upon successful landings. <br>
-									<i> Note: See Design (Application) for level details. </i>
-									</p>
+			<p> Overall calculations for scores are as follows:</p>
 
-									<br>
+			<p> <b>Score = (2 * lander angle) + 250 <br>Score = 5 * (100 / completion time in seconds) <br>
+Score = 5 * (remaining fuel)</b>
+			</p>
 
-									<h4> Surviving / Game Over </h4>
-									<br>
+			<p> Numerical values for fuel ranges from 0 to 100, with fuel starting off at 100. Time is calculated in seconds. Speed is calculated using the built-in source code’s vector physics. Increased level difficulties are calculated below with these values in mind.</p>
 
-									<p> The game is survival-based. Survive as long as you can. You have 5 lives.
-									The game is over when your life total reaches 0. </p>
+			<br>
+			<img src="img/lunar-lander/7.png">
+			<br>
+			<br>
+
+			<br>
+			<h4> leaderboard </h4>
+			<br>
+			<img src="img/lunar-lander/8.png">
+			<br>
+			<br>
+
+			<p>
+				Selecting the menu option on the top left will pop up the options for RESUME, LEADERBOARD, or QUIT. Depending on the setup some players will not see the option for LEADERBOARD.
+
+			</p>
+			<br>
+			<img src="img/lunar-lander/9.png">
+			<br>
+			<br>
+
+			<p>
+				For players with the LEADERBOARD option ON, participants will see the top 5 scores between other participants or a set score (if the participants performing the experiment are the first 5).
+			</p>
+
+			<p>
+				QUIT will simply just exit the game back to the game menu. If the player quits the game before the number of lives run out, data will not be recorded.
+			</p>
+
+			<br>
+			<h4> game over + data collection</h4>
+			<br>
+
+			<p>The game is over when the participant’s lives reaches zero. Quitting early does not result in a data save and information is only saved when the number of remaining lives reaches 0. Data is saved via an app called Astro (via .txt files) and values are sent as Average level before dying, average time per level, average fuel per level, highest level reached, and highest score reached. </p>
+			<br>
+			<img src="img/lunar-lander/10.png">
+			<br>
+			<br>
+			<br>
+			<h4> conclusion</h4>
+
+			<p>In this user study, social comparison had improvement on scores and completion times for participants with a leaderboard. However, little improvement was observed from leaderboard revelation and without. Participants showed interest in learning the game suggesting that the game was hard, or the participants gathered were not frequent gamers.
+			</p>
+
+			<br>
+			<h4> future work</h4>
+			<p> Future work includes modifying the pre-experiment interview to gather information on participants' gaming history as frequent gamers show more competitiveness than inexperienced players.</p>
+
+		</div>
 
 
 
-									<div style="margin: 0 auto; width: 30%;     height: auto;">
-
-									<h4> Controls </h4>
-<br>
-
-									<ul style="text-align: left; list-style: inside;">
-										<li>  U &emsp;&emsp;&emsp; start/pause the game </li>
-										<li> D  &emsp;&emsp;&emsp; exit the game (ignored while playing) </span> </li>
-										<li> L &emsp;&emsp;&emsp; rotate the lander counterclockwise </li>
-										<li> R &emsp;&emsp;&emsp; rotate the lander clockwise</li>
-										<li> C  &emsp;&emsp;&emsp; fire the engine (thruster) </li>
-									</ul>
-
-								</div> <!-- -->
-
-								<br>
-
-								<h4> Design (Application) </h4>
-
-								<br>
-
-			          <p>
-			            A simple setup page was implemented to gather participant data. Page was purely used by experimentor so its design is very basic. </p>
-
-			            <div class="pic-center">
-			              <img src="img/lunar-lander/setup1.png" style="max-width: 250px;">
-			           </div>
-
-								 <br>
-			            <p> Scores were recorded based on a multiplier on the amount of time and fuel used to land the spacecraft as follows: <p>
-
-
-			            <ul>
-			              <li> Landing score = 100 </li>
-			              <li> Time score = 5 * (100 / completion time) </li>
-			              <li> Fuel score = 5 * (remaining fuel) </li>
-			            </ul>
-
-									<br>
-									<p>
-			            To develop a leaderboard, an initial control group was used to build the initial/default leaderboard. Participants who score higher than
-			            a score on the leaderboards will replace it; marked by 'P(number)'. </p>
-
-			            <div class="spacing"> </div>
-
-			            <div class="pic-center">
-			              <img src="img/lunar-lander/score.png" style="max-width: 250px;">
-			           </div>
-
-								 <br>
-			            <p> The scoreboard is an option as part of the application’s interface and was available to specific group types along with a setup page. </p>
-
-			            <p>There are infinite levels. By design, the game is extremely difficult and there were no rewards given out to participants for achieving highest scores. Players are only privy to 5 lives throughout the game. Players cannot earn
-			            more lives. Game difficulty increased as the levels progress:
-								</p>
-
-			            <ul>
-			              <li> Less fuel available at higher level </li>
-			              <li> A faster landing is not allowed </li>
-			              <li> A greater lander angle is not allowed </li>
-			              <li> The landing pad is narrower </li>
-			            </ul>
-
-									<br>
-
-			            <p>The difficulty of levels was designed to engage players via the experiment to determine if players with leaderboard
-			            accessibility would play better. An easy game (where similar analytical data is more likely) would make it difficult to compare both control groups. </p>
-
-									<br>
-
-			         <h4 class="subheader"> Data Collection </h4>
-
-							 <br>
-			         <p> Participant data is saved and written on the app <span class="italics"> Astro</span> after the player's 5 lives are used up. Basic implementation for data were calculated
-			           and averaged by levels, time, remaining fuel, and scores.
-			          </p>
-
-			          <div class="pic-center">
-			            <img src="img/lunar-lander/data.png" style="max-width: 250px;">
-			         </div>
-
-							 <br>
-							 <br>
-
-			         <h4 class="subheader"> Software </h4>
-							 <br>
-
-			         <img src="img/logos/android.png" width="80" style="margin-left: 10px;">
-			         <img src="img/logos/astro.png" width="80" style="margin-left: 10px;">
-
-							 <br>
-							 <br>
-
-			         <h4 > Language </h4>
-							 <br>
-
-			         <img src="img/logos/java.png" width="100">
 
 			</div>
 		</div>
@@ -325,19 +314,27 @@
 
 
 	<!-- footer section start -->
-	<footer class="footer-section text-center">
-		<div class="container">
-			<h2 class="section-title mb-5">Let’s work together</h2>
-			<a href="mailto:jkvnguyen@hotmail.com" class="site-btn">Get in touch</a>
-			<div class="social-links">
-				<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span> </a>
-				<a href="https://www.youtube.com/channel/UCzfuPVQFwT4GPd5YwntBcQQ?view_as=subscriber"><span class="fa fa-youtube"></span></a>
-				<a href="https://github.com/jkvnguyen"><span class="fa fa-github"></span></a>
-			</div>
-			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen </a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	<footer class="footer-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8">
+					<h2 class="footer-message">let's get in touch</h2>
+				</div>
+				<div class="col-md-4 text-md-right">
+					<div class="social-links">
+						<!-- <a href=""><span class="fa fa-pinterest"></span></a> -->
+						<!-- <p>get in touch <i class="fa fa-long-arrow-down" style="font-size:24px"></i> </p>  -->
+						<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span></a>
+						<a href="mailto:jkvnguyen@hotmail.com"><span class="fa fa-envelope-o"></span></a>
+						<!-- <a href="mailto:jkvnguyen@hotmail.com" class="site-btn">get in touch</a> -->
+
+						<!-- <a href=""><span class="fa fa-twitter"></span></a> -->
+					</div>
+					<div class="copyright">
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen</a> -->
 </div>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<!-- footer section end -->

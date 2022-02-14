@@ -4,17 +4,51 @@
 	<title>Jeremy Nguyen - Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Jeremy Nguyen - Portfolio">
-	<meta name="keywords" content="portfolio, riddle, onepage, creative, html">
+	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Scripts -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header-section").style.top = "0px";
+  } else {
+    document.getElementById("header-section").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("main-menu");
+var btns = header.getElementsByClassName("a");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) {
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
 	<!-- Favicon -->
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
 
@@ -24,25 +58,25 @@
 	<![endif]-->
 
 </head>
-<body>
+<body class="body-pad">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
 
 	<!-- header section start -->
-	<header class="header-section">
+	<header id="header-section">
 		<div class="container-fluid">
 			<div class="row">
 				<a href="https://jkvnguyen.github.io/" class="logo">
-					<h2 class="site-logo">jeremy nguyen</h2>
+					<h2 class="site-logo">JN</h2>
 				</a>
 				<div class="col home-2 text-left text-md-right">
 					<nav class="main-menu">
 						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="resume.pdf">Resume</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a class="current" href="about.html">about</a></li>
+							<li><a href="resume.pdf">resume</a></li>
+							<li><a href="mailto:jkvnguyen@hotmail.com">talk to me</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -57,99 +91,83 @@
 
 	<!-- intro section start -->
 	<section class="intro-section">
-		<div class="container text-center">
-			<div class="row">
-				<div class="col-xl-10 offset-xl-1">
-					<h2 class="section-title"></h2>
-				</div>
-			</div>
-		</div>
+		
 	</section>
 	<!-- intro section end -->
 
 
 	<!-- page section start -->
 	<section class="page-section">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6">
-					<h2> Hello, my name is Jeremy. I design and develop user experiences! </h2>
 
-					<br>
-					<br>
-
-					<p> I am a recent Game Design graduate at George Brown College and graduate of York University with a Bachelor's in Digital Media. My work mainly revolves around Unity development (games & Augmented Reality), front-end web development, and UI/UX Design. My hobbies include
-						reading epic fantasy, cooking, and playing Magic: The Gathering.
-					 </p>
-					<div class="row mt-5">
-						<div class="col-md-4">
-							<div class="milestone" stlye="vertical-align: middle; display: inline-block; ">
-								<img style="vertical-align: middle; display: inline-block; height: 100%;" src="img/logos/Unity.png" width=150>
-								<!-- <h2>56<span>Clients</span></h2> -->
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="milestone">
-								<img style="vertical-align: middle;" src="img/logos/frontend.png" width=150>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="milestone">
-								<img style="vertical-align: middle;" src="img/logos/ui-ux.png" width=150>
-							</div>
-						</div>
-
-						<br>
-						<br>
-
-						<div class="row" style="margin: 0 auto; padding-top: 10%;">
-
-							<div class="column" style="margin-right: 150px !important;">
-								<img src="img/logos/guitar.png" width=130>
-							</div>
-
-							<div class="column" style="margin: 0 auto;" >
-									<img src="img/logos/magic.png" width=120>
-							</div>
-
-					</div>
-
-
-					</div>
-
-
-
-					<figure class="mt-5">
-						<!-- <img src="img/sign.png" alt=""> -->
-					</figure>
+				<div class="col-lg-1">
 				</div>
-				<div class="col-lg-5 offset-lg-1">
-					<figure class="pic-frame">
-						<img src="img/profilePic.jpg" alt="">
-					</figure>
+
+				<div class="col-lg-3 offset-lg-1">
+					<!-- <div class="col-lg-3"> -->
+
+						<img src="img/about.jpg" alt="" style="padding-right:10px;">
+
+						<br>
+						<div style="margin-top: 5px; font-size: 15px;"><i>some yakitori and me ↑</i></div>
+
+				</div>
+
+				<div class="col-lg-6">
+					<h2 style="font-size: 26px;"> About Me </h2>
+					<br>
+
+					<p> Hi, I'm Jeremy, a game designer and self-taught ux designer. Formerly an AR developer, I enjoy designing and developing experiences that brings out the best and joy in people. </p>
+
+						<p>
+						Currently, I have a post-graduate in Game Design from George Brown College and a Bachelor of Arts in Digital Media at York University.</p>
+
+						 <p>When I'm not deciding a font-face on Figma, you'll find me in the kitchen cooking something bougie or playing Magic: The Gathering with my friends. I am a big Toronto Raptors fan and lover of all things fantasy and Brandon Sanderson.
+
+					 </p>
+
+						</div>
+
+						<div class="col-lg-3 offset-lg-1" style="padding-top: 100px;">
+								<!-- <h2 style="font-size: 26px;"> more </h2> -->
+						</div>
+
+
+
 				</div>
 			</div>
-		</div>
+
 	</section>
 	<!-- page section end -->
 
 	<!-- footer section start -->
-	<footer class="footer-section text-center">
-		<div class="container">
-			<h2 class="section-title mb-5">Let’s work together</h2>
-			<a href="mailto:jkvnguyen@hotmail.com" class="site-btn">Get in touch</a>
-			<div class="social-links">
-				<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span> </a>
-				<a href="https://www.youtube.com/channel/UCzfuPVQFwT4GPd5YwntBcQQ?view_as=subscriber"><span class="fa fa-youtube"></span></a>
-				<a href="https://github.com/jkvnguyen"><span class="fa fa-github"></span></a>
-			</div>
-			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen </a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	<footer class="footer-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8">
+					<h2 class="footer-message">let's get in touch</h2>
+				</div>
+				<div class="col-md-4 text-md-right">
+					<div class="social-links">
+						<!-- <a href=""><span class="fa fa-pinterest"></span></a> -->
+						<!-- <p>get in touch <i class="fa fa-long-arrow-down" style="font-size:24px"></i> </p>  -->
+						<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span></a>
+						<a href="mailto:jkvnguyen@hotmail.com"><span class="fa fa-envelope-o"></span></a>
+						<!-- <a href="mailto:jkvnguyen@hotmail.com" class="site-btn">get in touch</a> -->
+
+						<!-- <a href=""><span class="fa fa-twitter"></span></a> -->
+					</div>
+					<div class="copyright">
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen</a> -->
 </div>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<!-- footer section end -->
+
+
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-2.1.4.min.js"></script>

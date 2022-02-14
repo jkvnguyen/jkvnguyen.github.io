@@ -4,21 +4,51 @@
 	<title>Jeremy Nguyen - Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Jeremy Nguyen - Portfolio">
-	<meta name="keywords" content="portfolio, riddle, onepage, creative, html">
+	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Scripts -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header-section").style.top = "0px";
+  } else {
+    document.getElementById("header-section").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("main-menu");
+var btns = header.getElementsByClassName("a");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) {
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
 	<!-- Favicon -->
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
 
@@ -28,25 +58,25 @@
 	<![endif]-->
 
 </head>
-<body>
+<body class="body-pad">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
 
 	<!-- header section start -->
-	<header class="header-section">
+	<header id="header-section">
 		<div class="container-fluid">
 			<div class="row">
 				<a href="https://jkvnguyen.github.io/" class="logo">
-					<h2 class="site-logo">jeremy nguyen</h2>
+					<h2 class="site-logo">JN</h2>
 				</a>
 				<div class="col home-2 text-left text-md-right">
 					<nav class="main-menu">
 						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="resume.pdf">Resume</a></li>
-							<li><a href="mailto:jkvnguyen@hotmail.com">Talk to Me</a></li>
+							<li><a href="about.html">about</a></li>
+							<li><a href="resume.pdf">resume</a></li>
+							<li><a href="mailto:jkvnguyen@hotmail.com">talk to me</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -59,438 +89,211 @@
 	</header>
 	<!-- header section end -->
 
-<br>
+	<!-- intro section start -->
+	<div style="padding-bottom: 130px;">
+	</div>
+	<!-- intro section end -->
 
 
-	<!-- page section start -->
+
 	<section class="page-section">
-		<div class="container-fluid">
+		<div class="container-fluid p-0">
 			<div class="row">
-				<div class="">
 
-					<img src="img/north-bear/world3.png">
+				<div class="col-lg-6">
 
+
+					<h3> North Bear</h3>
+					<br>
+					<br>
+
+					<div class="breakdown-row">
+					  <div class="breakdown-column" style="width: 25% !important;">
+							<b> role </b>
+							<p>game designer
+							</p>
+					  </div>
+					  <div class="breakdown-column" style="width: 40% !important;">
+							<b> skills</b>
+							<p>game design, technical writing, unity, creative</p>
+					  </div>
+					  <div class="breakdown-column">
+							<b> timeline </b>
+ 							<p>4 months</p>
+					  </div>
+					</div>
 
 					<br>
 					<br>
 					<br>
 					<br>
-					<h3 style="text-align: center;"> North Bear </h3>
-
-
-
-
-
-
-
-
-
 					<br>
 
-					<!-- <h4> About </h4> -->
+					<h4> summary </h4>
 
-					<br>
-
-					<p>
-
-						A 3D Virtual Reality survival game that aims to raise the awareness of climate change. You, the player, play as a mother polar bear. Living in Arctic Canada, you are tasked with trying to find food. However, around you, the ice is
-			        melting. There is garbage everywhere. The icebergs have only grown smaller and smaller each day. Your goal is to find fish before the ice beneath you melts away. You must jump/move from ice sheets to ice sheets and avoid from falling in the water.
-
+					<p>A collaborated with several other students to design a 3D Virtual Reality survival game that aims to raise the awareness of climate change.
 
 					</p>
 
 					<br>
-					<p><i> <b> Platform: </b> PC </i>
+					<h4> background </h4>
+
+					<p>As part of Canada’s celebration of 150 years of confederation, North Bear was created as part of a collaborative group project to represent Canada’s identity. From themes and works expressed by Norman McLaren, North Bear aims to raise the tremendous concern of global warming and its impact on Canada, and the world.
+
+					</p>
 
 					<br>
-					<i> <b> Project Length: </b> 2 months </i>
 
-					<br>
-					<i> <b> Responsibilities: </b> game mechanics, level design, game programming, writing, creative direction collaboration </i>
-					<br>
+						<h4> what i did </h4>
 
-				</p>
-					<br>
-					<br>
+							<ul>
+									<li> Collaborated with other students on overall creative direction of the game</li>
+									<li>Designed and created the levels.</li>
+									<li>Designed and fine-tuned every gameplay functionality.</li>
+									<li>Implemented cut scenes and animation sequences.</li>
 
-					<h4> Role: </h4>
-					<p> Game Designer </p>
-					<br>
-
-					<h4> What I did: </h4>
-					<br>
-
-					<ul>
-						<li> Collaborated with various other students on overall creative direction of the game. </li>
-						<li> Designed and created the levels. </li>
-						<li> Designed and tuned every gameplay functionality. </li>
-						<li> Implemented cut scenes and animation sequences. </li>
-					</ul>
+							</ul>
 
 
 				</div>
-
-
 
 				<div class="col-lg-5 offset-lg-1">
 
+					<img src="img/north-bear/1.png" style="width: 80%;">
 					<br>
 					<br>
-				  <iframe width="640" height="400" src="https://www.youtube.com/embed/mMEoI5r16hk" allowfullscreen></iframe>
-
-					<br>
-					<br>
-					<br>
-
-
+					<iframe width="400" height="260" src="https://www.youtube.com/embed/mMEoI5r16hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 				</div>
+
+			<div class="col-lg-11">
+
+
+
+
+
+				<br>
+
+
+				<h4> development process </h4>
+				<p>
+					The project was originally conceived as a physical installation. Early concepts and prototyping involved gameplay in a physical space on a pressure sensitive LED enabled floor. Gameplay had consisted of two experiences:
+				</p>
+
+				<p style="margin-left: 20px;"> 1) In the first experience, players are asked to explore the game world either by completing an objective or simply walking through the piece. The ice sheets will consist of four colours that indicate its state: green (temporary solution) indicates a collectible or a viewable players can go to; white indicates that the ice sheet is walkable and in stable condition; light blue indicates that the ice sheet is still walkable but is in an unstable state and on the verge of breaking; blue indicates that the area is unwalkable and players standing in a blue ice sheet will provoke negative effects (more unstable ice sheets) if a player is standing on a blue tile. Standing on a white tile for a long period of time will provoke changes to its current state; gradually changing from white to blue (hence breaking)
+				</p>
+
+				<p style="margin-left: 20px;">2) In the second experience, players engage in a small minigame outside the LED floors; building blocks of iceberg and stacking them like a snowman. Over time the blocks would "melt" (fall over) allowing new participants to rebuild the icebergs. Rebuilding the icebergs help the state of the LED floors in the first experience preventing the ice sheets from melting as quickly and being more stable.
+				</p>
+
+				<br>
+				<img src="img/north-bear/2.png">
+				<br>
+				<br>
+
+				<p>However, due to budget uncertainty and its possible restrictions, the game was ultimately changed to a Virtual Reality experience to reduce cost of physical material with more of focus on game design.
+
+				Like the physical design, the foundation was laid out for what features would be in the game. The challenge was adding/adjusting to the new features that a virtual game differs and making the adjustments.
+
+				Ultimately as a group, we narrowed the design goals to as such:
+
+ 				</p>
+
+				<ul>
+						<li> The game should appeal to a large number of people. The goal is to raise awareness of climate change.
+							</li>
+						<li>It should be intuitive to play. The game relies on the player to move around in the space.
+						</li>
+						<li>Changes from a physical to a virtual design should be orthogonal.
+						</li>
+						<li>Game should account for physical space and overall physicality of VR.
+							</li>
+
+							<li> Identifying the development constraints that can affect game mechanics and design</li>
+				</ul>
+
+				<br>
+				<h4> objective </h4>
+				<p>
+					A critical core concept throughout was facilitating a self-identification with the struggle of animals like the polar bear. Originally the objective was to have live collectibles in the installation that players had to transfer from place to place (within the installation); to encourage them to move around on the LED floors and experience the same difficulties of climate change. Players would have to strategically make their steps as to not fall into the "water". Similarly to the game "the floor is lava", players are encouraged to jump around on the LED floors adding to the game's unique game mechanic. For players unwilling and/or cannot participate as part of this activity, a minigame was developed to accommadate these players.
+
+				</p>
+
+				<p>
+					However because of our change to a virtual experience, the focus on the experience and creating the desired "transformational dreamtime" was reimagined as a personal journey. The player, now a polar bear, and mother of 3 cubs, must find food for their young ones and face the reality that is climate change. Players must still take strategical steps to avoid falling into the water reserving that same mechanic.
+				</p>
+
+				<br>
+				<img src="img/north-bear/user-flow.png">
+				<br>
+				<br>
+				<h4> level design </h4>
+				<p>Early prototyping on the HTC Vive headset showed a very limited quantity of space available for level design and the game mechanics had to be adjusted to fit this scale.
+
+				</p>
+				<p>
+					As a result, the game is played through levels to accommadate for the limited live space and for further exploration of the world. Players are required to collect a minimum number of collectibles (fish) to advance to the next level. However, collecting more than the required will change the outcome of the game. Once the number of required fish are caught, an indicator will reveal where the players should go next.
+				</p>
+
+				<p>
+					Concepts for levels had starting and end points as the same locations for two different levels. This is done to keep the player from going somewhere outside the physical space available when they advance.
+				</p>
+
+				<p>
+					Game consists of 5 total levels. Each level becomes progressively harder: with ice sheet being less durable, more fish to collect, and more obstacles to obstruct view and movement. Each level also has its own unique obstacle which includes icebergs and garbage; that block the path of the player. Players who walked into the obstacle will be given a warning to leave the obstacle before a faint is counted on their polar bear and they lose a fish. Depending on the player's performance, not gathering enough fish can have great affect on the final outcome.
+				</p>
+
+				<br>
+				<p> <i>levels 1 -> 5</i></p>
+
+				<img src="img/north-bear/3.png">
+
+				<br>
+				<br>
+				<p>
+					Game mapping is built upon the concept art for the levels. The map is designed as a large environment where only portion of the maps are played at a time as levels. Outside the playing area, the game features various 3D models and animations to add to the theme of an Arctic Canada. As the game ends, a sequence for an animation/cut scene will be called.
+				</p>
+
+				<br>
+				<h4> art style + design </h4>
+
+				<img src="img/north-bear/4.png">
+				<br>
+				<br>
+				<br>
+
+				<h4> ice sheets </h4>
+				<p> Standing on the ice sheet will deterioriote the ground below you. The idea is to strategically move from around sheet to sheet. The game hinges on making smart paths as to not backtrack and cause the ice to deteriorate.
+				There are 4 states for ice sheets.</p>
+				<br>
+
+			<img src="img/north-bear/5.png" style="width: 80%;">
+			<br>
+			<br>
+			<br>
+
+			<h4> game over</h4>
+			<p> The player faints when they are no longer standing on top a walkable ice sheet and falls into the ocean. There is a short duration where the player can stay in the water before fainting. When the player faints, they will lose one of their fish changing their outcome for the game. If the minimum numbers of fishes are no longer reached as a result of multiple faints, the player loses the game.
+					</p>
+					<p>A faint results in the game restarting the player back to their current level. Players will be prompted to return to a marked ice sheet on the map to represent the start before the level begins.</p>
+			<br>
+
+				<h4> ending</h4>
+				<p> The player will be locked in their position but should be able to move their head such that they can still observe. There will be 3 ending/cut scenes based on the outcome of the player's result collecting fish.</p>
+
+				<ul>
+					<li>High threshold of fish: Ending will result in a happy ending.				</li>
+					<li>Medium threshold of fish: Only some cubs are fed.					</li>
+					<li> Lost: No cubs are fed.					</li>
+				</ul>
+				<br>
+
 			</div>
 
 
-								<br>
-								<hr>
-													<br>
-													<br>
-													<br>
-																<br>
+			</div> <!-- row -->
 
-			<div class="container text-center">
-				<div class="row">
-					<div class="col-xl-10 offset-xl-1">
 
-
-						<h4> Case Study </h4>
-						<br>
-
-						<h4> The effects of climate change are becoming increasingly difficult to deny. Canada’s Arctic region is warmer than ever previously on record and this is having an undeniable effect on the environment and wildlife of the north. In many legends and
-							mythologies, bear and humans are closely linked, often represented as humans who have transformed into bears and as the keepers of wisdom and teachers.
-							<br>
-							<br>
-							Project North Bear asks participants to step into the DreamTime and allow themselves to be transformed into this mythological manifestation of Polar Bear and Human as one, interchangeable, and to experience a struggle with a dwindling arctic habitat and
-							to search for solutions through cooperative play and a symbolic rebuilding of the environment around them.
-						</h4>
-
-
-					</div>
-				</div>
-			</div>
-
-			<br>
-						<br>
-			<br>
-			<br>
-			<hr>
-			<br>
-			<br>
-
-
-			<div class="">
-				<div class="row">
-					<div class="">
-
-											<h4 class="subheader"> Development Process </h4>
-											<br>
-
-								      <p> The project was originally conceived as a physical installation. Early concepts and prototyping involved gameplay in a physical space on a pressure sensitive LED enabled floor. Gameplay had consisted of two experiences: </p>
-
-								        <ul style="">
-								         <li>  In the first experience, players are asked to explore the game world either by completing an objective or simply walking through the piece. The ice sheets will consist of four colours that indicate its state: green (temporary solution) indicates
-								            a collectible or a viewable players can go to; white indicates that the ice sheet is walkable and in stable condition; light blue indicates that the ice sheet is still walkable but is in an unstable state and on the verge of breaking; blue
-								            indicates that the area is unwalkable and players standing in a blue ice sheet will provoke negative effects (more unstable ice sheets) if a player is standing on a blue tile. Standing on a white tile for a long period of time will provoke
-								            changes to its current state; gradually changing from white to blue (hence breaking). </li>
-
-														<br>
-								          <li> In the second experience, players engage in a small minigame outside the LED floors; building blocks of iceberg and stacking them like a snowman. Over time the blocks would "melt" (fall over) allowing new participants to rebuild the icebergs.
-								            Rebuilding the icebergs help the state of the LED floors in the first experience preventing the ice sheets from melting as quickly and being more stable. </li>
-								        </ul>
-
-												<br>
-
-												<i> <b> Early concept art, mockup, and even a physical prototype is shown below. </i> </b>
-
-												<br>
-												<div>
-													<img src="img/north-bear/earlyArt4.png" width=300 height=200>
-													<img src="img/north-bear/earlyArt1.png" width=300 height=200>
-													<img src="img/north-bear/earlyArt3.png" width=300 height=200>
-													<div style="margin-bottom: 5px;"> </div>
-													<img src="img/north-bear/earlyArt5.png" width=300>
-													<img src="img/north-bear/EarlyArt6.png" width=300>
-												</div>
-
-												<br>
-									      <p> However, due to budget uncertainty and its possible restrictions, the game was ultimately changed to a Virtual Reality experience to reduce cost of physical material with more of focus on game design. </p>
-									        <br>
-									        <p> Like the physical design, the foundation was laid out for what features would be in the game. The challenge was adding/adjusting to the new features that a virtual game differs and making adjustments. </p>
-
-
-									        <p> Ultimately as a group, we narrowed the design goals to as such: </p>
-
-									        <ul>
-									          <li> The game should appeal to a large number of people. The goal is to raise awareness of climate change. </li>
-									          <li> It should be intuitive to play. The game relies on the player to move around in the space. </li>
-									          <li> Changes from a physical to a virtual design should be orthogonal. </li>
-									          <li> Game should account for physical space and overall physicality of VR. </li>
-														<li> Identifying the development constraints that can affect game mechanics and design </li>
-									        </ul>
-
-													<br>
-
-									        <p> These goals would provide a solid starting point to the exploration of gameplay functionalities in VR with many more ideas for the game's functionalities to be explored. These ideas would be documented throughout the
-														process and can be found under the game mechanic documents below. </p>
-
-													<span class="source-code"> <a href="https://github.com/jkvnguyen/NorthBear/blob/master/Design%20Docs/GameDesignUpdate1.pdf"> Game Mechanics #1 </a> </span> <br>
-													<span class="source-code"> <a href="https://github.com/jkvnguyen/NorthBear/blob/master/Design%20Docs/GameDesignUpdate2.pdf"> Game Mechanics #2 </a> </span>
-
-													<br>
-													<br>
-													<br>
-													<h4 > Objective </h4>
-													<br>
-
-									        <p>
-									          A critical core concept throughout was facilitating a self-identification with the struggle of animals like the polar bear. Originally the objective was to have live collectibles in the installation that players had to transfer from place to place (within
-									          the installation); to encourage them to move around on the LED floors and experience the same difficulties of climate change. Players would have to strategically make their steps as to not fall into the "water". Similarly to the game "the floor
-									          is lava", players are encouraged to jump around on the LED floors adding to the game's unique game mechanic. For players unwilling and/or cannot participate as part of this activity, a minigame was developed to accommadate these players.
-
-									          <br>
-														<br>
-
-									          However because of our change to a virtual experience, the focus on the experience and creating the desired "transformational dreamtime" was reimagined as a personal journey. The player, now a polar bear, and mother of 3 cubs, must find food for their
-									          young ones and face the reality that is climate change. Players must still take strategical steps to avoid falling into the water reserving that same mechanic.
-									        </p>
-
-													<br>
-									        <h4 > Levels </h4>
-													<br>
-
-													<p> Early prototyping on the HTC Vive headset showed a very limited quantity of space available for level design and the game mechanics had to be adjusted to fit this scale. </p>
-
-									        <p>
-									          As a result, the game is played through levels to accommadate for the limited live space and for further exploration of the world. Players are required to collect a minimum number of collectibles (fish) to advance to the next level. However, collecting more than the required
-									          will change the outcome of the game. Once the number of required fish are caught, an indicator will reveal where the players should go next. </p>
-
-
-
-									          <i> Early prototype </i> <br>
-
-									            <img src="img/north-bear/limit.png" width=500>
-															<br>
-									          <br>
-
-														<p>
-									          Concepts for levels had starting and end points as the same locations for two different levels. This is done to keep the player from going somewhere outside the physical space available when they advance. </p>
-
-									          <div class=pic-center>
-									            <img src="img/north-bear/levelArt1.png" width=240 height=170>
-									            <img src="img/north-bear/levelArt2.png" width=375 height=190 style="margin-left: 20px;">
-									            <img src="img/north-bear/levelArt3.png" width=240>
-									          </div>
-
-														<br>
-
-									          <p>Game consists of 5 total levels. Each level becomes progressively harder: with ice sheet being less durable, more fish to collect, and more obstacles to obstruct view and movement. Each level also has its own unique obstacle which includes icebergs and
-									          garbage; that block the path of the player. Players who walked into the obstacle will be given a warning to leave the obstacle before a faint is counted on their polar bear and they lose a fish. Depending on the player's performance, not gathering
-									          enough fish can have great affect on the final outcome. </p>
-
-														<br>
-
-													<div class="row">
-														<div class="column" style="margin: 0 auto;"> LEVEL 1 <br>
-															<img src="img/north-bear/level1.png" width=240>
-														</div>
-
-														<div class="column" style="margin: 0 auto;"> LEVEL 2 <br>
-															<img src="img/north-bear/level2.png" width=240>
-														</div>
-
-														<div class="column" style="margin: 0 auto;"> LEVEL 3 <br>
-															<img src="img/north-bear/level3.png" width=240>
-														</div>
-
-
-															<div class="column"> LEVEL 4 <br>
-																<img src="img/north-bear/level4.png" width=240>
-															</div>
-
-															<div class="column" style="margin: 0 auto;"> LEVEL 5 <br>
-																<img src="img/north-bear/level5.png" width=240>
-															</div>
-
-
-												</div>
-
-
-
-
-
-										      <br>
-													<br>
-
-									        <p> <b> Flowchart for full game flow: </b> </p>
-
-
-									        <img src="img/north-bear/flowchart.png" width=90%>
-
-													<h4 > Minigame (Idea)</h4>
-													<br>
-													<p> Because of the limitations of VR being a single person experience, we had wanted a small minigame from outside the VR game and design in such a away
-													that actions in this minigame would affect the main game experience. Some ideas that came from our initial designs were a physical block game where
-													players would stack 3D printed pieces of ice onto each other in a unique configuration that would affect the players in the VR game.
-												</p>
-
-
-
-												 <p> However having consulted with our developers, we had decided to ultimately remove this idea entirely as there was no easy way to connect multiple physical components to the VR game that would not both require plenty
-												 of wires (hindering the user experience) and time/budget to add these components to the game.</p>
-
-
-												 <br>
-									        <h4 > Worldbuilding</h4>
-													<br>
-									        <p>
-									          Game mapping is built upon the concept art for the levels. The map is designed as a large environment where only portion of the maps are played at a time as levels. Outside the playing area, the game features
-									          various 3D models and animations to add to the theme of an Arctic Canada. As the game ends, a sequence for an animation/cut scene will be called.      </p>
-
-									          <div class="spacing"> </div>
-									          <b><i>Early prototypes:</i></b>
-									          <div class="spacing"> </div>
-
-
-									            <img src="img/north-bear/world1.png" width=240 style="margin-right: 5px;">
-									            <img src="img/north-bear/world2.png" width=240 style="margin-right: 5px;">
-									            <img src="img/north-bear/world3.png" width=240>
-									            <img src="img/north-bear/world4.png" width=240 style="margin-top: 5px;">
-
-
-														<br>
-									          <div class="spacing"> </div>
-									          Video demo can be found
-									          <a href="https://www.youtube.com/watch?v=ovcPibl8wsY"> here</a>.
-
-
-
-													<br>
-													<br>
-									        <h4 > Ice Sheets </h4>
-													<br>
-
-									        <p>
-									          In terms of ice sheets, there are 4 states. Standing on the ice sheet will deterioriote the ground below you. The idea is to strategically move from around sheet to sheet. The game hinges on making smart paths as to not backtrack and cause the ice to
-									          deteriorate.
-									        </p>
-
-									        <div class="row">
-									          <div class="column" style="margin: 0 auto;">
-									            <div class="content">
-									              <img src="img/north-bear/ice1.png" width=150>
-
-									              <div class="bold"> <i> Stable </i> </div>
-									              <p> Stable ice sheets have the highest duration before breaking. </p>
-									            </div>
-
-
-															<div class="content">
-									              <img src="img/north-bear/ice3.png" width=150>
-
-									              <div class="bold"> <i> Heavily Cracked </i> </div>
-									              <p> Heavily cracked ice sheets have a low duration before breaking. </p>
-									            </div>
-
-									          </div>
-
-									          <div class="column" style="margin: 0 auto;">
-									            <div class="content" >
-									              <img src="img/north-bear/ice2.png" width=150 >
-
-									              <div class="bold"> <i> Slightly Cracked </i> </div>
-									              <p> Slightly cracked ice sheets have a moderate duration before breaking. </p>
-									            </div>
-
-															<div class="content">
-																<img src="img/north-bear/ice4.png" width=150>
-
-																<div class="bold"> <i> Endpoint </i> </div>
-																<p> Endpoint is revealed when all fish are collected. Endpoint are invulnerable and do not break. </p>
-															</div>
-
-									          </div>
-
-
-									        </div>
-									        <!-- row -->
-
-													<br>
-									        <h4 > Faint / Game Over </h4>
-													<br>
-
-									        <p>
-									          The player faints when they are no longer standing on top a walkable ice sheet. There is a short duration where the player can stay in the water before fainting. When the player faints, they will lose one of their fish changing their outcome for the game.
-									          If the minimum numbers of fishes are no longer reached as a result of multiple faints, the player loses the game.
-									        </p>
-
-
-													<br>
-									        <h4 > Ending </h4>
-													<br>
-
-									        <p>
-									          The player will be locked in their position but should be able to move their head such that they can still observe. There will be 3 ending/cut scenes based on the outcome of the player's result collecting fish.
-
-									          <ol>
-									            <li> High threshold of fish: Ending will result in a happy ending. </li>
-									            <li> Medium threshold of fish: Only some cubs are fed. </li>
-									            <li> Lost: No cubs are fed. </li>
-									          </ol>
-
-														<br>
-									          <b> <i> Demo video of all the sequences: </i> </b>
-									          <div class="spacing"> </div>
-									          <iframe width="480" height="270" src="https://www.youtube.com/embed/YmUXV6kbPo4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
-									        </p>
-
-													<br>
-													<br>
-
-
-
-
-
-
-													<div class="">
-														 <div class="column" style="width: 30% !important; padding-right: 10%;">
-																 <h4 class="subheader"> Software </h4>
-																<br>
-
-																<img src="img/logos/Unity.png" width="85" style="margin-right: 10px;">
-																<img src="img/logos/photoshop.png" width="65" style="margin-right: 10px;">
-																<br>
-																<br>
-																<br>
-														 </div>
-
-
-
-
-														<div class="column" style="width: 30% !important">
-															<h4 class="subheader"> Language </h4>
-														 <br>
-
-														 <img src="img/logos/Csharp.png" width="50" style="margin-right: 10px;">
-
-													 	</div>
-
-
-
-													 </div>
-
-
-
-
-										</div>
-									</div>
-								</div>
 
 
 
@@ -505,23 +308,36 @@
 
 
 
+
+
+
+
 	<!-- footer section start -->
-	<footer class="footer-section text-center">
-		<div class="container">
-			<h2 class="section-title mb-5">Let’s work together</h2>
-			<a href="mailto:jkvnguyen@hotmail.com" class="site-btn">Get in touch</a>
-			<div class="social-links">
-				<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span> </a>
-				<a href="https://www.youtube.com/channel/UCzfuPVQFwT4GPd5YwntBcQQ?view_as=subscriber"><span class="fa fa-youtube"></span></a>
-				<a href="https://github.com/jkvnguyen"><span class="fa fa-github"></span></a>
-			</div>
-			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen </a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	<footer class="footer-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8">
+					<h2 class="footer-message">let's get in touch</h2>
+				</div>
+				<div class="col-md-4 text-md-right">
+					<div class="social-links">
+						<!-- <a href=""><span class="fa fa-pinterest"></span></a> -->
+						<!-- <p>get in touch <i class="fa fa-long-arrow-down" style="font-size:24px"></i> </p>  -->
+						<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span></a>
+						<a href="mailto:jkvnguyen@hotmail.com"><span class="fa fa-envelope-o"></span></a>
+						<!-- <a href="mailto:jkvnguyen@hotmail.com" class="site-btn">get in touch</a> -->
+
+						<!-- <a href=""><span class="fa fa-twitter"></span></a> -->
+					</div>
+					<div class="copyright">
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen</a> -->
 </div>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<!-- footer section end -->
+
 
 
 	<!--====== Javascripts & Jquery ======-->

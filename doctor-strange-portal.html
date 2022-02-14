@@ -3,18 +3,52 @@
 <head>
 	<title>Jeremy Nguyen - Portfolio</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Riddle - Portfolio Template">
-	<meta name="keywords" content="portfolio, riddle, onepage, creative, html">
+	<meta name="description" content="Jeremy Nguyen - Portfolio">
+	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Scripts -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header-section").style.top = "0px";
+  } else {
+    document.getElementById("header-section").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("main-menu");
+var btns = header.getElementsByClassName("a");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) {
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
 	<!-- Favicon -->
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
 
@@ -24,25 +58,25 @@
 	<![endif]-->
 
 </head>
-<body>
+<body class="body-pad">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
 
 	<!-- header section start -->
-	<header class="header-section">
+	<header id="header-section">
 		<div class="container-fluid">
 			<div class="row">
 				<a href="https://jkvnguyen.github.io/" class="logo">
-					<h2 class="site-logo">jeremy nguyen</h2>
+					<h2 class="site-logo">JN</h2>
 				</a>
 				<div class="col home-2 text-left text-md-right">
 					<nav class="main-menu">
 						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="resume.pdf">Resume</a></li>
-							<li><a href="mailto:jkvnguyen@hotmail.com">Talk to Me</a></li>
+							<li><a href="about.html">about</a></li>
+							<li><a href="resume.pdf">resume</a></li>
+							<li><a href="mailto:jkvnguyen@hotmail.com">talk to me</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -55,165 +89,145 @@
 	</header>
 	<!-- header section end -->
 
-<br>
+	<!-- intro section start -->
+	<div style="padding-bottom: 130px;">
+	</div>
+	<!-- intro section end -->
 
 
-<section class="intro-section">
-	<div class="container-fluid">
+<section class="page-section">
+	<div class="container-fluid p-0">
 		<div class="row">
-			<div class="">
+			<div class="col-lg-6">
 
 
-				<!-- <img src="img/portfolio/portal.png"> -->
+				<!-- <iframe width="100%" height="500" src="https://www.youtube.com/embed/KK5qYZHO3TE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen controls=0></iframe> -->
 
-
-				<iframe width="100%" height="500" src="https://www.youtube.com/embed/KK5qYZHO3TE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen controls=0></iframe>
-				<br>
-				<br>
-				<br>
 				<h3> Doctor Strange AR Portal</h3>
 				<br>
-
 				<br>
 
-
-
-
-				<div class="column-container">
-					 <div class="column" style="width: 50% !important; padding-right: 5%;">
-						 <h4> Case Study </h4>
-						 <br>
-
-									 <p >
-
-										 Learning Augmented Reality and incorporating AR in tech products.
-
-										</p>
-					 </div>
-
-
-
-					 <div class="column"style="width: 10% !important">
-
-
+				<div class="breakdown-row">
+					<div class="breakdown-column" style="width: 25% !important;">
+						<b> role </b>
+						<p>ux designer, developer
+						</p>
 					</div>
-
-					<div class="column"style="width: 40% !important">
-
-						<h4> Role </h4>
-					  <br>
-					  <p> UX Designer, Developer </p>
-
-				 </div>
-
-
-
-				 </div>
-
-				 <br>
-				<h4 > Introduction </h4>
+					<div class="breakdown-column" style="width: 40% !important;">
+						<b> skills</b>
+						<p>figma, unity, c#, arkit</p>
+					</div>
+					<div class="breakdown-column">
+						<b> timeline </b>
+						<p>2 weeks</p>
+					</div>
+				</div>
 				<br>
-				<p> For this AR Exercise, I wanted to challenge myself and learn ARKit. Because of my past experience using/implementing AR markers via Vuforia, I decided to develop the XR Portal and learn about markerless AR. For my app, I made a simple XR portal that portrays the Marvel franchise Doctor Strange where users create portal(s) to travel throughout the multiverse. Users simply choose a location they want to go to and tap on the screen to summon the portal in which they can enter the portal and explore the world inside.
+				<br>
+				<br>
+				<br>
+				<br>
 
-
+				<h4 > summary </h4>
+				<p> An Augmented Reality portal developed and designed as part of an application process.
 				</p>
-				<!-- <div class="source-code">
-					<a href="https://github.com/jkvnguyen/HermiteSpline"> Source code </a> (<a href="https://github.com/jkvnguyen/HermiteSpline">Running the source code</a>)
-				</div> -->
-
-
-
-				<br>
 				<br>
 
-				<h4 > Brainstorming </h4>
-				<br>
+
+
+
+
+				<h4 > background </h4>
 
 				<p>
+				For this AR Exercise, I wanted to challenge myself and learn ARKit. Because of my past experience using/implementing AR markers via Vuforia, I decided to develop the XR Portal and learn about markerless AR. For my app, I made a simple XR portal that portrays the Marvel franchise Doctor Strange where users create portal(s) to travel throughout the multiverse. Users simply choose a location they want to go to and tap on the screen to summon the portal in which they can enter the portal and explore the world inside.
+				</p>
+			</div>
 
-					To understand the possibilities, I looked at all possibilities for solutions including both markerless AR and AR marker. For this process I wrote/sketch ideas that could be applied using AR and in turn applying those to mediums - Unity, Vuforia, ARKit/ARCore - to determine whether markerless AR or AR markers best suits the theme/design goals. Here are the list of ideas I came up with: </p>
+			<div class="col-lg-5 offset-lg-1">
+
+				<img src="img/ar-portal/1.png">
+
+				<br>
+
+			</div>
+
+			<div class="col-lg-11">
+			<br>
+			<h4> brainstorming</h4>
+			<p>
+			To understand the possibilities, I looked at all possibilities for solutions including both markerless AR and AR marker. For this process I wrote/sketch ideas that could be applied using AR and in turn applying those to mediums - Unity, Vuforia, ARKit/ARCore - to determine whether markerless AR or AR markers best suits the theme/design goals. Here are the list of ideas I came up with:</p>
+
+			<p> <b>1) Book promotion: Game of Thrones (AR Packaging)</b></p>
+
+			<div style="height:350px;">
+				<div class="pros-cons">
+
+					<p> Functionalities</p>
+
+					<ul >
+						<li> Readers scan a specific page on the book which reveals more information about: characters, abilities, certain lores, locations in the world. For example, video/animation showing abilities and 3D models for character description. </li>
+						<li> Gives better visualization of what the author intended for the worldmaking. </li>
+						<li> Technology? Vuforia, Unity (something I have worked with before) </li>
+						<li> Where? In between book chapters/transitions/prologue/epilogue </li>
+					</ul>
+				</div>
+
+				<div class="pros-cons">
+					<p> Drawbacks, Constraints</p>
+
+					<ul>
+						<li> Book should be open for interpretation? </li>
+						<li> Might be awkward to use when reading (can distract the user from reading) </li>
+
+					</ul>
+				</div>
+			</div>
 
 
-					<br>
 
 
-					<h5> 1. Book promotion: Game of Thrones (AR Packaging) </h5>
-					<div style="padding-left:5%;">
+
+
+
+						<p> <b>2) Music AR Guide Manual (AR Instruction Manual / AR Packaging) </b></p>
+						<div style="height:320px;">
+							<div class="pros-cons">
+
+								<p> Functionalities</p>
+
+
+																		<ul>
+																			<li> Music training app to help beginners better understand/read better music notations, symbols, notes, rhythms, etc. </li>
+																			<li> AR Scan on music sheet. The scan identifies music notations and explains it to the user on a device as a UI.</li>
+																		</ul>
+							</div>
+
+							<div class="pros-cons">
+								<p> Drawbacks, Constraints</p>
+
+								<ul>
+									<li> Potentially limited to beginner only usage. More experienced users are less likely to need/use the app.
+									</li>
+									<li> Camera would have to constantly updated when parts of a sheet is finished and/or if rhythm changes (ie. Jazz)  </li>
+									<li> Potential problems: AR marker would have to be considerably accurate. </li>
+									<li> What instrument to portray? Piano? </li>
+
+								</ul>
+							</div>
+						</div>
 
 
 						<br>
 
-								<ul >
-									<li> Readers scan a specific page on the book which reveals more information about: characters, abilities, certain lores, locations in the world. For example, video/animation showing abilities and 3D models for character description. </li>
-									<li> Gives better visualization of what the author intended for the worldmaking. </li>
-									<li> Technology? Vuforia, Unity (something I have worked with before) </li>
-									<li> Where? In between book chapters/transitions/prologue/epilogue </li>
-								</ul>
-
-
-									<br>
 
 
 
-								<i> <p> Drawbacks/Constraints/Comments:</p></i>
+							<p> <b>3) Doctor Strange Sling Ring Portals (XR Portal) </b> </p>
+							<div style="height:350px;">
+								<div class="pros-cons">
 
-								<ul>
-									<li> Book should be open for interpretation? </li>
-									<li> Might be awkward to use when reading (can distract the user from reading) </li>
-
-								</ul>
-
-								<br>
-
-								<img src="img/ar-portal/sketch1.png" width=700>
-
-								<br>
-
-
-
-								<br>
-
-							</div>
-
-						<hr style="width: 20%; border-color: #ccc;">
-							<br>
-
-						<h5> 2. Pokemon GO Extension (XR Portal) </h5>
-						<div style="padding-left:5%;">
-
-						<br>
-
-								<ul>
-									<li> When near a gym (via Pokemon), players can create a portal and enter the gym. </li>
-									<li> GPS based on closeness to the gym, like the current game, and portal making only available when near enough. </li>
-									<li> Once inside the portal, users can engage in Pokemon battles with the current Gym Leader and other leaderboard players. </li>
-									<li> Make some kind of interaction with other players in the AR? Multiplayer addition. </li>
-								</ul>
-
-								<br>
-
-								<i> <p> Drawbacks/Constraints/Comments:</p></i>
-
-								<ul>
-									<li> Potential time constraints developing the multiplayer. </li>
-									<li> Ability to engage with Gym Leader and other leaderboard players already exist so only an AR component is added so new forms of game mechanics need to be added which can take time as Pokemons each have unique abilities. </li>
-									<li> Utilizes GPS that needs to be set up in a fixed location. Not ideal for showing a live demo. </li>
-
-								</ul>
-
-								<br>
-								<hr style="width: 20%; border-color: #ccc;">
-
-							</div>
-									<br>
-
-
-
-							<h5> 3. Doctor Strange Sling Ring Portals (XR Portal) </h5>
-							<div style="padding-left:5%;">
-
-							<br>
-
+									<p> Functionalities</p>
 
 									<ul>
 										<li> Users make a circle with their hands to make a portal </li>
@@ -223,183 +237,145 @@
 										<li> Users can create multiple portal(?) </li>
 										<li> Interact with objects in the portal. Fight villains threatening Earth. Use different gesture recognitions to cast different spells. </li>
 									</ul>
+								</div>
 
-									<br>
-
-									<i> <p> Drawbacks/Constraints/Comments:</p></i>
+								<div class="pros-cons">
+									<p> Drawbacks, Constraints</p>
 
 									<ul>
 										<li> Using a Google Map feature is ambitious and requires active Internet connection to feature locations around the map. It would somehow have to access Google Maps’ Virtual map to portray on the world.
 										</li>
 										<li> Preset locations can be limited and boring.  </li>
 										<li> Gesture recognition/hand tracking is not easy to implement and time consuming. Hand tracking would require some kind of AR marker(?) </li>
-
 									</ul>
-
-
-									<br>
-
-									<img src="img/ar-portal/sketch2.png" width=700>
-
-									<br>
-									<br>
 								</div>
-									<hr style="width: 20%; border-color: #ccc;">
-										<br>
+							</div>
 
-									<h5> 4.  Music AR Guide Manual (AR Instruction Manual / AR Packaging)  </h5>
+
+
+
+
+
 									<br>
-									<div style="padding-left:5%;">
+									<br>
+									<br>
 
-										<ul>
-											<li> Music training app to help beginners better understand/read better music notations, symbols, notes, rhythms, etc. </li>
-											<li> AR Scan on music sheet. The scan identifies music notations and explains it to the user on a device as a UI.</li>
-										</ul>
+
+
+										<h4> research </h4>
+										<p>Following the brainstorm process, I did research on each of the following ideas and looked at the potential solutions to solving them. I looked at online guides and tutorials to discover some of the things that are relevant to these ideas, and which guides are best suited to be extended into an appropriate app that meets the required design goals.
+
+										Resources for these include: </p>
+
+										<div>
+											<div style="width: 50%; float: left;">
+												<ul>
+													<li> <a href="https://www.youtube.com/watch?v=Z5AmqMuNi08"> AR Portal</a>
+													</li>
+													<li> <a href="https://www.youtube.com/watch?v=1cwm6sCcV_o"> AR Portal tutorial series</a></li>
+													<li> <a href="https://www.youtube.com/watch?v=vqtEHOYX2vw"> AR Plane Detection</a> </li>
+												</ul>
+											</div>
+											<div style="width: 50%; float: left;">
+												<ul>
+													<li> <a href="https://www.youtube.com/watch?v=khavGQ7Dy3c&t"> Vuforia AR Marker #1</a>
+													</li>
+													<li> <a href="https://www.youtube.com/watch?v=MtiUx_szKbI&t"> Vuforia AR Marker #2</a></li>
+													<li> <a href="https://www.youtube.com/watch?v=mjNAPCFaZ9Y"> Vuforia AR Marker #3</a></li>
+												</ul>
+											</div>
+										</div>
 
 										<br>
+										<br>
+										<br>
+										<br>
+										<p> Apps I looked at: AR Runner, Night Sky, Ikea Place, AR Fitness, World Brush </p>
+										<br>
 
-								<i> <p> Drawbacks/Constraints/Comments:</p></i>
+										<h4 > research development </h4>
+										<p>The completion of these early prototypes helped me identify some of the design goals while developing my portal. It allowed me to better understand which features were capable of implementing and which features can be excluded. With constraints such as time to consider I had to adjust the way in which I want to implement my apps and as such these adjustments included: </p>
+										<ul >
+											<li> <i>Excluding the use of gesture recognition</i>. Implementing gesture recognition from scratch is difficult and very time consuming. Could use another person’s gesture recognition code, however, this is not easily acquired. </li>
 
-										<ul>
-											<li> Potentially limited to beginner only usage. More experienced users are less likely to need/use the app.
+											<li> <i>Initial plane detection logic</i>: if there is nothing to detect OR the detect is far away at a distance -> for vertical planes
+													<ul  style="list-style: circle; position:relative;left: 5%">
+														<li> After implementing/testing this feature, plane detection is not as reliable from far away distances and require decent lighting to detect</li>
+														<li>	Changes: Detect only horizontal planes, and at the feet. This avoids players creating portal at only a wall and creates a portal only if there is space in front of them. </li>
+													</ul>
 											</li>
-											<li> Camera would have to constantly updated when parts of a sheet is finished and/or if rhythm changes (ie. Jazz)  </li>
-											<li> Potential problems: AR marker would have to be considerably accurate. </li>
-											<li> What instrument to portray? Piano? </li>
 
+											<li> <i>Portal Flicker problem</i> -> the logic for entering a portal will flicker </li>
+											<li> <i>Implement a UI that changes Text as an instructional help</i> as opposed to having a pop-up that explains instructions -> Oversaturated with instructions </li>
+											<li> <i>Change basic UI buttons to implement different location spawns via the portal</i>. Also add exit/clear button.</li>
+											<li> <i>Improved/Add features to 3D environment</i>. Make one location a 3D World and another a 360 Video (as locations). Learn 360 Video implementation.</li>
+											<li> <i>Users cannot create multiple different portals</i>. The AR Hit Test makes it awkward such that the portal have a tendency to spawn on top of each other (assuming I want to keep consistent when spawning initially)</li>
 										</ul>
 
-									<br>
+										<br>
+										<h4> prototype goals</h4>
+										<p> Following the brainstorming process and research, the first steps included building a prototype for an XR Portal. Without prior knowledge of making AR Portals in ARKit, I used several of the resources mentioned above to help develop my own XR Portal. The process to building the app started small and included:</p>
+										<ul>
+											<li> Building a portal that can be entered through and explored.</li>
+											<li> Have the app detect planes. </li>
+											<li> Make a simple UI to do simple tasks (print statement)</li>
+											<li> Create a simple 3D World to explore.</li>
+											<li> Develop a simple gesture/touch detection.</li>
+										</ul>
+										<br>
+										<p>A brief mockup of the app was made to identify the user flow and user experience. Downloading different kinds of AR apps I compared several of interfaces each of these apps used to get a better understanding of AR design. I would then use this information and ultimately apply it to my own user experience design. </p>
 
-									<img src="img/ar-portal/sketch3.png" width=700>
+										<br>
+										<h4> lo-fi mockup + onboarding</h4>
+										<br>
+										<img src="img/ar-portal/2.png">
+										<br>
+										<br>
+										<br>
+										<h4> using another portal</h4>
+										<br>
+										<img src="img/ar-portal/3.png">
 
-
-
-
-									<br>
-									<br>
-								</div>
-									<hr style="width: 20%; border-color: #ccc;">
+										<br>
+										<br>
+										<h4 > challenges </h4>
+										<ul>
+											<li> Refreshing my skills in 3D computer graphics. Tutorials I watched used mostly shaders, and shaders are an integral part in 3D graphics. 3D computer graphics is not easy and I did not want to simply copy paste the tutorials but actually understand and learn how things worked. Some of the things I did to better understand the code was watching extra tutorial videos and looking at APIs of shaders in Unity. This helped me better understanding the uses of shaders and how they can be applied in AR. </li>
+											<li> Incorporating all components of each tutorials and trying to combine them. Although individually each component worked on their own, combining them together often did not work as intended and this required time to solve. One of the ways in which I overcame this problem was by making small iterations of one component and gradually adding other components onto it. If somehow by adding one component creates an error to the entire project, I can always refer to past iterations (that worked) such that I can try and understand the problem and solve. </li>
+											<li> Resolving the flicker issue when a person would enter the portal.</li>
+											<li> Finding 3D assets to fit a particular theme. </li>
+											<li> Balancing the design and development. Being in both roles as the designer and developer, it was difficult to balance between the designing an excellent user flow while testing for errors/bugs. </li>
+										</ul>
+										<br>
 										<br>
 
-					<h4> Next Steps: </h4>
-					<br>
+										<h4> demo video </h4>
+										<p> With that said, I thought the app turned out well and you can check it out. :)</p>
+										<iframe width="853" height="480" src="https://www.youtube.com/embed/KK5qYZHO3TE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-					<p>Following the brainstorm process, I did research on each of the following ideas and looked at the potential solutions to solving them. I looked at online guides and tutorials to discover some of the things that are relevant to these ideas, and which guides are best suited to be extended into an appropriate app that meets the required design goals.
+										<br>
+										<br>
+										<br>
+										<h4 > future work </h4>
 
-					Resources for these include: </p>
-					<br>
-					<ul>
-						<div class="source-code">
-							<li> <a href="https://www.youtube.com/watch?v=Z5AmqMuNi08"> AR Portal </a> </li>
-							<li> <a href="https://www.youtube.com/watch?v=1cwm6sCcV_o"> AR Portal tutorial series </a></li>
-							<li> <a href="https://www.youtube.com/watch?v=vqtEHOYX2vw"> AR Portal Plane Detection </a> </li>
-							<li> <a href="https://www.youtube.com/watch?v=khavGQ7Dy3c&t"> Vuforia AR Marker #1</a> </li>
-							<li> <a href="https://www.youtube.com/watch?v=MtiUx_szKbI&t"> Vuforia AR Marker #2</a></li>
-							<li> <a href="https://www.youtube.com/watch?v=mjNAPCFaZ9Y"> Vuforia AR Marker #3</a></li>
-						</div>
-					</ul>
+										<p> In terms of future work and things I would like to do in the future … </p>
 
-					<br>
-					<br>
-					<h4> Prototype Goals </h4>
-					<br>
-
-					<i> (Obviously I decided to develop the Doctor Strange Portal =) ) </i>
-					<p>Following the brainstorming process and research, the first steps included building a prototype for an XR Portal. Without prior knowledge of making AR Portals in ARKit, I used several of the resources mentioned above to help develop my own XR Portal. The process to building the app started small and included: </p>
-					<ul>
-						<li> Building a portal that can be entered through and explored.</li>
-						<li> Have the app detect planes. </li>
-						<li> Make a simple UI to do simple tasks (print statement)</li>
-						<li> Create a simple 3D World to explore.</li>
-						<li> Develop a simple gesture/touch detection.</li>
-					</ul>
-
-					<br>
+										<ul>
+											<li> Implementing features for gesture recognition. Rather than create the portal with a simple tap button/screen, the portal should feel earned and have a more positive user experience when mimicking the characters in the movie (Doctor Strange). In terms of execution, I would refer to an Android build as I have used and seen the source code for gesture recognition in the past and apply its build to Unity. This includes: (1) Detect input points for gesture; (2) Normalize the points to fit in a unit bounding box; (3) Look for straight line strokes; (4) Compute stroke features; (5) Use stroke features to look for a match from a dictionary of characters.  </li>
+											<li> Adding interaction where the user can click on the models and an event occurs. This can easily be implemented the same way as the portal through Triggers or Collision where colliding with it will cause an action to occur. </li>
+											<li> Adding extra UI components: slider button with a scroll through the different locations, UI for help/extras/credits/settings. For the slider, I would implement this by having a list of locations and hide/reveal the current three on the slider -> I would have to use some kind of collection function algorithm. For the extras button I would simply just make a UI Panel with a button in Unity and have it translucent over the game screen to reveal extra information if the user needs (attached with a script to pop up and press next).</li>
+											<li> Improving upon the UI/UX: more effective user flow and more aesthetically pleasing UIs.</li>
+											<li> Smoother portal transitions. No flickers, disable the plane detection when inside a world, crisp UI transitions.</li>
+											<li> Develop interesting worlds that are ideally fictional as the point of AR is to play around in a Virtual environment. For this I would need 3D Artists to help make models. </li>
+										</ul>
 
 
 
-					<p>A brief mockup of the app was made to identify the design goals and how the user experience would play out. Downloading different kinds of AR apps I compared several of interfaces each of these apps used to get a better understanding of AR design. I would then use this information and ultimately apply it to my own user experience design. </p>
-
-					<br>
-					<br>
-					<img src="img/ar-portal/sketch5.png" width=700>
-					<br>
-					<br>
-
-					<p>Apps I looked at:</p>
-
-					<ul>
-						<li> AR Runner </li>
-						<li> Night Sky</li>
-						<li> Ikea Place</li>
-						<li> AR Fitness</li>
-						<li> World Brush</li>
-					</ul>
-
-					<br>
-					<br>
-					<h4 > Prototype Feedback </h4>
-					<br>
-
-					<p>The completion of the first prototype helped me identify some of the design goals while developing my portal. It allowed me to better understand which features were capable of implementing and which features can be excluded. With constraints such as time to consider I had to adjust the way in which I want to implement my apps and as such these adjustments included: </p>
-
-
-					<ul  style="text-align: left; list-style: inside; padding-left: 5%;">
-						<li> Excluding the use of gesture recognition. Implementing gesture recognition from scratch is difficult and very time consuming. Could use another person’s gesture recognition code, however, this is not easily acquired. </li>
-
-						<li> Initial plane detection logic: if there is nothing to detect OR the detect is far away at a distance -> for vertical planes
-								<ul  style="list-style: circle; position:relative;left: 5%">
-									<li> After implementing/testing this feature, plane detection is not as reliable from far away distances and require decent lighting to detect</li>
-									<li>	Changes: Detect only horizontal planes, and at the feet. This avoids players creating portal at only a wall and creates a portal only if there is space in front of them. </li>
-								</ul>
-						</li>
-
-						<li> Portal Flicker problem -> the logic for entering a portal will flicker -> postpone this problem until implementation of others functions are finished, comeback to this problem later -> implementation for transporting does work.</li>
-						<li> Implement a UI that changes Text as an instructional help as opposed to having a pop-up that explains instructions -> Oversaturated with instructions </li>
-						<li> Change basic UI buttons to implement different location spawns via the portal. Also add exit/clear button.</li>
-						<li> Improved/Add features to 3D environment. Make one location a 3D World and another a 360 Video (as locations). Learn 360 Video implementation.</li>
-						<li> Users cannot create multiple different portals. The AR Hit Test makes it awkward such that the portal have a tendency to spawn on top of each other (assuming I want to keep consistent when spawning initially)</li>
-					</ul>
-
-					<br>
-					<br>
+								</div> <!-- lg-11 -->
 
 
 
-					<img src="img/ar-portal/sketch5.png" width=700> <br>
-					<i> A sketch of the portal logic and ways to detect gesture recognition. </i>
-					<br>
-					<br>
-
-					<p> With these changes/adjustments in mind, the <span class="bold">DESIGN GOALS</span> can be defined as: </p>
-
-					<div class="spacing"> </div>
-					<br>
-					<ol type="A" style="text-align: left; font-size: 18px;">
-						<li> Successfully transport user’s current location to the AR World by stepping into the portal.</li>
-						<li> Users can create a portal anywhere using plane detection.</li>
-						<li> Show a virtual environment when the user enters the portal, the goal is to promote the model/product. In this scenario, it will be a CGI model and/or environment.</li>
-						<li> Exiting the portal will return back to the real world.</li>
-						<li> Create a competent UI that is easily navigable by users. UI should allow users to change the settings within the app into desired preferences.</li>
-						<li> Plane detection should activate smoothly and function well.</li>
-						<li> Users should experience the entire Virtual World. This includes looking up at the sky.</li>
-					</ol>
-
-					<br>
-
-					<h4 > Summary </h4>
-					<br>
-					<br>
-
-					<div class="spacing"> </div>
-					<img src="img/ar-portal/sketch5.png" width=700> <br>
-					<i>Initial prototype/mockup for the UI/UX design of the app.  Reveals process and user experience tendencies. </i>
-					<br>
-					<br>
-					<div class="spacing"> </div>
-
-					<ul>
+					<!-- <ul>
 						<li> Users open the app</li>
 						<li> Note: Hints/Popups are given throughout to instruct the user on how to use. Perhaps a button to explain. </li>
 						<li> Detect the ground. A particles will appear to show a pseudo detector then a plane is created.</li>
@@ -421,132 +397,53 @@
 						<li>Indicators on top to guide users. Indicators to reveal plane detection.</li>
 						<li>Users enter a unique, interesting environment inside the portal. </li>
 					</ul>
-					<br>
-
-					<br>
-					<img src="img/ar-portal/sketch7.png" width=700> <br>
-					<div class="spacing"> </div>
-					<i> Final development of the user experience workflow system </i>
-					<br>
-					<br>
-
-					<img src="img/ar-portal/sketch8.png" width=700> <br>
-					<br>
-					<br>
-					<h4 class="sub-subheader"> Programming Notes: </h4>
-					<br>
-					<p>Make sure MeshTextPro is not null and referenced so you don't get Serializable error</p>
-					<br>
-					<br>
-
-
-					<h4 > Timeline </h4>
-					<br>
-					<p>
-					Brainstorm & Design Docs: &emsp;&emsp;&ensp; 10 hrs <br>
-					Research & Learning:&emsp;&emsp;&emsp;&emsp;&emsp; 			13 hrs <br>
-					Debugging & Testing:&emsp;&emsp;&emsp;&emsp;&emsp; 		  50 hrs <br>
-					UI/UX Design & Worldmaking:&emsp;&ensp; 	10 hrs <br>
-				</p>
-
-					<br>
-					<h4 > Challenges </h4>
-					<br>
-
-					<ul>
-						<li> One of the challenges that came along while making the XR Portal was refreshing my skills in 3D computer graphics. Tutorials I watched used mostly shaders, and shaders are an integral part in 3D graphics. 3D computer graphics is not easy and I did not want to simply copy paste the tutorials but actually understand and learn how things worked. Some of the things I did to better understand the code was watching extra tutorial videos and looking at APIs of shaders in Unity. This helped me better understanding the uses of shaders and how they can be applied in AR. </li>
-						<li> Another challenge that was prevalent throughout this process was incorporating all components of each tutorials and trying to combine them. Although individually each component worked on their own, combining them together often did not work as intended and this required time to solve. One of the ways in which I overcame this problem was by making small iterations of one component and gradually adding other components onto it. If somehow by adding one component creates an error to the entire project, I can always refer to past iterations (that worked) such that I can try and understand the problem and solve. </li>
-						<li> My biggest challenge for this project was trying to resolve the flicker issue when a person would enter the portal. One of the problems that came about was that there does not exist any tutorials (in Unity) that successfully solves this problem when the user enters the portal. Although some tutorials explain their methods of solving this problem, one of the ways in which I tried to solve this problem was getting a better understanding of the logic/theory behind the flickering such that I can apply my problem skills. However having refreshed some of my knowledge in 3D computer graphics, and understanding that the problem comes as a result of the camera’s clipping plane, clipping out the view, I was unsuccessful in solving this problem. If I had had more time, another way in which I would approach this would be to look into potential solutions in ARKit (Swift) and transfer them to Unity.</li>
-					</ul>
-
-					<br>
-					<h4 > Future Work </h4>
-					<br>
-
-					<p> In terms of future work and things I would like to do in the future … </p>
-
-					<ul>
-						<li> Implementing features for gesture recognition. Rather than create the portal with a simple tap button/screen, the portal should feel earned and have a more positive user experience when mimicking the characters in the movie (Doctor Strange). In terms of execution, I would refer to an Android build as I have used and seen the source code for gesture recognition in the past and apply its build to Unity. This includes: (1) Detect input points for gesture; (2) Normalize the points to fit in a unit bounding box; (3) Look for straight line strokes; (4) Compute stroke features; (5) Use stroke features to look for a match from a dictionary of characters.  </li>
-						<li> In terms of art, I would have preferred if the user can somehow interact with the 3D models. In this case, I would need an animator to create animations as to make the 3D world less bland. Adding interaction where the user can click on the models and an event occurs. This can easily be implemented the same way as the portal through Triggers or Collision where colliding with it will cause an action to occur. </li>
-						<li> Adding extra UI components: slider button with a scroll through the different locations, UI for help/extras/credits/settings. For the slider, I would implement this by having a list of locations and hide/reveal the current three on the slider -> I would have to use some kind of collection function algorithm. For the extras button I would simply just make a UI Panel with a button in Unity and have it translucent over the game screen to reveal extra information if the user needs (attached with a script to pop up and press next).</li>
-						<li> Smoother control flow between transitions. No flickers, disable the plane detection when inside a world, crisp UI transitions. Most of these features can be easily implemented with time. </li>
-						<li> Develop interesting worlds that are ideally fictional as the point of AR is to play around in a Virtual environment. For this I would need 3D Artists to help make models. </li>
-						<li> Overall just adding more crisp UIs and exploring more with UX. Would need the help of graphic designers. </li>
-					</ul>
-
-				</p>
-
-
-				<br>
-
-				<div class="tools">
-					 <div class="column" style="width: 20%; padding-right: 10%; float: left">
-						 <h4 > Technology </h4>
-						 <br>
-						 <img src="img/logos/ios.png" width="50" style="margin-right: 10px;">
-						 <br>
-					 </div>
-
-
-
-					 <div class="column"style="width: 20%; float: left">
-						 <h4 > Software </h4>
-						 <br>
-						 <img src="img/logos/Unity.png" width="85" style="margin-right: 10px;">
-						 <img src="img/logos/photoshop.png" width="65" style="margin-right: 10px;">
-						 <br>
-						 <br>
-						 <br>
-
-					</div>
-
-					<div class="column" style="width: 20%; float: left">
-						<h4 > Language </h4>
-						<br>
-
-						<img src="img/logos/Csharp.png" width="50" style="margin-right: 10px;">
-
-				 </div>
-
-
-
-				 </div>
+					<br> -->
 
 
 
 
 
-			</div>
+
+
+
 		</div>
 	</div>
 </section>
 
 
-
 <!-- footer section start -->
-<footer class="footer-section text-center">
-	<div class="container">
-		<h2 class="section-title mb-5">Let’s work together</h2>
-		<a href="mailto:jkvnguyen@hotmail.com" class="site-btn">Get in touch</a>
-		<div class="social-links">
-			<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span> </a>
-			<a href="https://www.youtube.com/channel/UCzfuPVQFwT4GPd5YwntBcQQ?view_as=subscriber"><span class="fa fa-youtube"></span></a>
-			<a href="https://github.com/jkvnguyen"><span class="fa fa-github"></span></a>
-		</div>
-		<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen </a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<footer class="footer-section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8">
+				<h2 class="footer-message">let's get in touch</h2>
+			</div>
+			<div class="col-md-4 text-md-right">
+				<div class="social-links">
+					<!-- <a href=""><span class="fa fa-pinterest"></span></a> -->
+					<!-- <p>get in touch <i class="fa fa-long-arrow-down" style="font-size:24px"></i> </p>  -->
+					<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span></a>
+					<a href="mailto:jkvnguyen@hotmail.com"><span class="fa fa-envelope-o"></span></a>
+					<!-- <a href="mailto:jkvnguyen@hotmail.com" class="site-btn">get in touch</a> -->
+
+					<!-- <a href=""><span class="fa fa-twitter"></span></a> -->
+				</div>
+				<div class="copyright">
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen</a> -->
 </div>
+			</div>
+		</div>
 	</div>
 </footer>
 <!-- footer section end -->
 
 
-	<!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/mixitup.min.js"></script>
-	<script src="js/magnific-popup.min.js"></script>
-	<script src="js/main.js"></script>
+
+<!--====== Javascripts & Jquery ======-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

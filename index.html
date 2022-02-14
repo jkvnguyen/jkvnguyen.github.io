@@ -6,6 +6,22 @@
 	<meta name="description" content="Jeremy Nguyen - Portfolio">
 	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Scripts -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header-section").style.top = "0px";
+  } else {
+    document.getElementById("header-section").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
 	<!-- Favicon -->
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
@@ -34,7 +50,7 @@
 	</div>
 
 	<!-- header section start -->
-	<header class="header-section">
+	<header id="header-section">
 		<div class="container-fluid">
 			<div class="row">
 				<a href="https://jkvnguyen.github.io/" class="logo">
@@ -69,10 +85,10 @@
 				<div class="col-lg-10">
 					<div class="portfolio-intro">
 
-						<!-- <h1> hi, i'm jeremy. </h1> -->
-						<br>
+						<!-- <br> -->
 						<h1 class="section-title mb-5">
-							jeremy is a <span>game + ux designer</span> for all things video games and ar.</h1>
+							hi, i'm <span>jeremy</span>.<br>
+							a <span>game + ux designer</span> for all things video games and ar.</h1>
 						<ul class="portfolio-filter controls">
 							<li class="control" data-filter="all">all</li>
 							<li class="control" data-filter=".design">design</li>
@@ -82,33 +98,6 @@
 					</div>
 				</div>
 
-				<!-- <div class="col-lg-6">
-				</div> -->
-
-				<!-- <div class="first-item col-md-6 col-lg-12 mix games p-lg-0">
-					<a href="super-star-cadets.html" class="portfolio-item set-bg " data-setbg="img/portfolio/21.png">
-						<div class="pi-inner">
-							<h2>+ See Project</h2>
-						</div>
-					</a>
-					<div class="portfolio-meta">
-						<h2>Super Star Cadets - The Disappearance of Cadet Turner </h2>
-						<p>Augmented Reality Puzzle Game</p>
-					</div>
-				</div>
-
-				<div class="second-item mix col-lg-6 games">
-					<a href="doctor-strange-portal.html" class="portfolio-item set-bg" data-setbg="img/portfolio/portal.png">
-						<div class="pi-inner">
-							<h2>+ See Project</h2>
-						</div>
-					</a>
-					<div class="portfolio-meta">
-						<h2>Doctor Strange AR Portal</h2>
-						<p>Augmented Reality Playthrough</p>
-					</div>
-				</div> -->
-
 				<div class="mix col-md-6 col-lg-6 programming">
 					<a href="super-star-cadets.html" class="portfolio-item set-bg pi-style2" data-setbg="img/portfolio/mpc.png">
 						<div class="pi-inner">
@@ -116,8 +105,20 @@
 						</div>
 					</a>
 					<div class="portfolio-meta">
-						<h2 class="item-title">01. Mysterious Package Company</h2>
+						<h2 class="item-title">Mysterious Package Company</h2>
 						<p><b>product development</b> augmented reality escape room</p>
+					</div>
+				</div>
+
+				<div class="mix col-md-6 col-lg-6 programming">
+					<a href="super-star-cadets.html" class="portfolio-item set-bg pi-style2" data-setbg="img/portfolio/nextech.png">
+						<div class="pi-inner">
+							<h2>+ See Project</h2>
+						</div>
+					</a>
+					<div class="portfolio-meta">
+						<h2 class="item-title">NexTech AR Solutions</h2>
+						<p><b>ux design</b> augmented reality platforms</p>
 					</div>
 				</div>
 
@@ -129,7 +130,19 @@
 					</a>
 					<div class="portfolio-meta">
 						<h2>Doctor Strange Portal</h2>
-						<p>AR Portal</p>
+						<p><b>ux design + dev</b> augmented reality portal</p>
+					</div>
+				</div>
+
+				<div class="mix col-md-6 col-lg-6 design">
+					<a href="lunar-lander.html" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/lunar.png">
+						<div class="pi-inner">
+							<h2>+ See Project</h2>
+						</div>
+					</a>
+					<div class="portfolio-meta">
+						<h2>Lunar Lander+</h2>
+						<p><b>ux research</b> case study on social comparison</p>
 					</div>
 				</div>
 
@@ -142,23 +155,25 @@
 													</a>
 													<div class="portfolio-meta">
 														<h2>Boba Blast</h2>
-														<p>Game Design + Development</p>
+														<p><b>game design+dev</b> personal project</p>
 													</div>
 												</div>
 
 
 
-								<div class="mix col-md-6 col-lg-6 design">
+								<!-- <div class="mix col-md-6 col-lg-6 design">
 									<a href="north-bear.html" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/16.png">
 										<div class="pi-inner">
 											<h2>+ See Project</h2>
 										</div>
 									</a>
 									<div class="portfolio-meta">
-										<h2>North Bear</h2>
-										<p>Virtual Reality Game (Game Design)</p>
+										<h2>00. 3D Computer Graphics</h2>
+										<p><b>programming</b> student projects</p>
 									</div>
-								</div>
+								</div> -->
+
+
 
 								<div class="mix col-md-6 col-lg-6 design programming">
 									<a href="scanna-ar.html" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/scanna2.png">
@@ -168,7 +183,7 @@
 									</a>
 									<div class="portfolio-meta">
 										<h2>Scanna</h2>
-										<p>Augmented Reality Budtender</p>
+										<p><b>ux design + dev </b> augmented reality budtender</p>
 									</div>
 								</div>
 
@@ -184,115 +199,6 @@
 									</div>
 								</div>
 
-								<div class="mix col-md-6 col-lg-6 design">
-									<a href="lunar-lander.html" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/lunar.png">
-										<div class="pi-inner">
-											<h2>+ See Project</h2>
-										</div>
-									</a>
-									<div class="portfolio-meta">
-										<h2>Lunar Lander Plus</h2>
-										<p>User Experience Research</p>
-									</div>
-								</div>
-
-				<div class="mix col-md-6 col-lg-6 design">
-					<a href="aritize.html" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/aritize.png">
-						<div class="pi-inner">
-							<h2>+ See Project</h2>
-						</div>
-					</a>
-					<div class="portfolio-meta">
-						<h2>ARitize</h2>
-						<p>UI/UX Design</p>
-					</div>
-				</div>
-
-
-
-				<!-- <div class="mix col-md-6 col-lg-3 programming">
-					<a href="divide-and-conquer.html" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/dnc.png">
-						<div class="pi-inner">
-							<h2>+ See Project</h2>
-						</div>
-					</a>
-					<div class="portfolio-meta">
-						<h2>Divide and Conquer</h2>
-						<p>RTS-MOBA mobile game</p>
-					</div>
-				</div> -->
-
-				<div class="mix col-md-6 col-lg-6 programming">
-					<a href="spaceship.html" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/spaceship.png">
-						<div class="pi-inner">
-							<h2>+ See Project</h2>
-						</div>
-					</a>
-					<div class="portfolio-meta">
-						<h2>Affine Transformations</h2>
-						<p>3D Computer Graphics</p>
-					</div>
-				</div>
-				<div class="mix col-md-6 col-lg-6 programming">
-					<a href="hermite-spline.html" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/hermite.png">
-						<div class="pi-inner">
-							<h2>+ See Project</h2>
-						</div>
-					</a>
-					<div class="portfolio-meta">
-						<h2>Hermite Spline</h2>
-						<p>3D Computer Graphics</p>
-					</div>
-				</div>
-
-				<div class="mix col-md-6 col-lg-6 programming">
-					<a href="ray-caster.html" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/raycast.png">
-						<div class="pi-inner">
-							<h2>+ See Project</h2>
-						</div>
-					</a>
-					<div class="portfolio-meta">
-						<h2>Ray Caster</h2>
-						<p>3D Computer Graphics</p>
-					</div>
-				</div>
-
-
-
-
-
-<!--
-
-******************** UNUSED
-
-<div class="mix col-md-6 col-lg-3 writing">
-	<a href="mandalorian-season2-rewrite.html" class="portfolio-item set-bg pi-style2" data-setbg="img/portfolio/mandalorian_fanfic.png">
-		<div class="pi-inner">
-			<h2>+ See Project</h2>
-		</div>
-	</a>
-	<div class="portfolio-meta">
-		<h2>Mandalorian Season 2 - Rewrite</h2>
-		<p>Fan Fiction</p>
-	</div>
-</div>
-
-
-				<div class="mix col-md-6 col-lg-3 programming">
-					<a href="pages.html" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/18.png">
-						<div class="pi-inner">
-							<h2>+ See Project</h2>
-						</div>
-					</a>
-					<div class="portfolio-meta">
-						<h2>Pages (Online bookstore)</h2>
-						<p>E-commerce System</p>
-					</div>
-				</div>
-
-
--->
-
 
 
 			</div>
@@ -303,23 +209,23 @@
 
 	<!-- footer section start -->
 	<footer class="footer-section">
-		<div class="container-fluid" style="padding-left: 0px !important">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-8">
-					<h2 class="">Let’s work together</h2>
-					<a href="mailto:jkvnguyen@hotmail.com" class="site-btn">Get in touch</a>
+					<h2 class="footer-message">let's get in touch</h2>
 				</div>
 				<div class="col-md-4 text-md-right">
 					<div class="social-links">
 						<!-- <a href=""><span class="fa fa-pinterest"></span></a> -->
-						<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span> </a>
-						<a href="https://www.youtube.com/channel/UCzfuPVQFwT4GPd5YwntBcQQ?view_as=subscriber"><span class="fa fa-youtube"></span></a>
-						<a href="https://github.com/jkvnguyen"><span class="fa fa-github"></span></a>
+						<!-- <p>get in touch <i class="fa fa-long-arrow-down" style="font-size:24px"></i> </p>  -->
+						<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span></a>
+						<a href="mailto:jkvnguyen@hotmail.com"><span class="fa fa-envelope-o"></span></a>
+						<!-- <a href="mailto:jkvnguyen@hotmail.com" class="site-btn">get in touch</a> -->
+
 						<!-- <a href=""><span class="fa fa-twitter"></span></a> -->
 					</div>
-					<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					<div class="copyright">
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen</a> -->
 </div>
 				</div>
 			</div>
