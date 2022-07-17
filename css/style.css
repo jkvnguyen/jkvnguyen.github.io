@@ -224,8 +224,8 @@ hr {
 }
 
 .portfolio-section .section-title{
-  font-size: 36px;
-  width: 70%;
+  font-size: 42px;
+  width: 85%;
   padding-bottom: 50px;
   color: #333333;
   font-family: 'SFProDisplay';
@@ -661,17 +661,17 @@ header {
 }
 
 .portfolio-meta {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .portfolio-meta h2 {
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   font-family: 'Inter';
   border-bottom: 1.5px solid #000;
   border-bottom-style: solid;
   width: max-content;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .portfolio-meta p {
