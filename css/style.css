@@ -618,7 +618,7 @@ header {
 .portfolio-item {
   display: block;
   width: 100%;
-  height: 300px !important;
+  height: 250px !important;
   background-position: center center;
   position: relative;
   margin-bottom: 30px;
