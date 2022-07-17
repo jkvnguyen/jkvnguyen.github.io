@@ -665,17 +665,17 @@ header {
 
 .portfolio-meta h2 {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
   font-family: 'Inter';
   border-bottom: 1.5px solid #000;
   border-bottom-style: solid;
   width: max-content;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .portfolio-meta p {
-  margin-top: 1px;
-  font-size: 16px;
+  margin-top: 3px;
+  font-size: 14px;
   color: black;
   margin-bottom: 0;
 }
