@@ -6,15 +6,49 @@
 	<meta name="description" content="Jeremy Nguyen - Portfolio">
 	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Scripts -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header-section").style.top = "0px";
+  } else {
+    document.getElementById("header-section").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("main-menu");
+var btns = header.getElementsByClassName("a");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) {
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
 	<!-- Favicon -->
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
 
@@ -24,25 +58,25 @@
 	<![endif]-->
 
 </head>
-<body>
+<body class="body-pad">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
 
 	<!-- header section start -->
-	<header class="header-section">
+	<header id="header-section">
 		<div class="container-fluid">
 			<div class="row">
 				<a href="https://jkvnguyen.github.io/" class="logo">
-					<h2 class="site-logo">jeremy nguyen</h2>
+					<h2 class="site-logo">JN</h2>
 				</a>
 				<div class="col home-2 text-left text-md-right">
 					<nav class="main-menu">
 						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="resume.pdf">Resume</a></li>
-							<li><a href="mailto:jkvnguyen@hotmail.com">Talk to Me</a></li>
+							<li><a href="about.html">about</a></li>
+							<li><a href="resume.pdf">resume</a></li>
+							<li><a href="mailto:jkvnguyen@hotmail.com">talk to me</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -58,10 +92,10 @@
 <br>
 
 
-<section class="intro-section">
-	<div class="container-fluid">
+<section class="page-section">
+	<div class="container-fluid p-0">
 		<div class="row">
-			<div class="">
+			<div class="col-lg-11">
 
 
 
@@ -82,8 +116,7 @@
 					<br>
 
 					<p>
-						 In my final semester at George Brown College, I took on the challenge to try and implement networked gameplay and expand my overall game development skills. I extended a previous game I worked on, <i>Milky Bubble Battle Boiz</i>, and
-						 designed and documented the game mechanics, along with implementing game features such as local networking, menu functions, and all core gameplay. I also incorporated a new overall art style that is modern and trendy.
+						 A game jam project I worked on at George Brown College where I worked as part of a small team to create a bubble tea inspired party game.
 					</p>
 
 					<br>
@@ -96,6 +129,12 @@
 					<iframe width="853" height="480" src="https://www.youtube.com/embed/CbjOCScZiN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<br>
 					<br>
+
+					<div class="col-lg-12">
+						<img src="img/sky-of-tides/Cover.png">
+
+					</div>
+
 
 					<h5> Overview </h5>
 					<br>
@@ -133,7 +172,7 @@
 				<br>
 				<br>
 
-				<h5 > Art Style (Menus) </h5>
+				<!-- <h5 > Art Style (Menus) </h5>
 				<br>
 
 				<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGguIMXL8MGVh9X2LRLeHx8%2FBoba-Blast%3Fnode-id%3D228%253A2" allowfullscreen></iframe>
@@ -146,7 +185,7 @@
 
 				<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGguIMXL8MGVh9X2LRLeHx8%2FBoba-Blast%3Fnode-id%3D105%253A2" allowfullscreen></iframe>
 
-					<div style="width: 70%; margin: 0 auto;">
+					<div style="width: 70%; margin: 0 auto;"> -->
 
 
 
@@ -154,27 +193,7 @@
 
 													 </div>
 
-													 <br>
-													 <br>
-													 <br>
-													 <br>
-													 <br>
-													 <br>
 
-
-													 <h5 > Software </h5>
-													 <br>
-													 <img src="img/logos/figma.png" width="70" style="margin-right: 10px;">
-													 <img src="img/logos/Unity.png" width="85" style="margin-right: 10px;">
-													 <img src="img/logos/photoshop.png" width="65" style="margin-right: 10px;">
-													 <br>
-													 <br>
-													 <br>
-
-													 <h4 > Language </h4>
-													 <br>
-
-													 <img src="img/logos/Csharp.png" width="50" style="margin-right: 10px;">
 
 
 			</div>
@@ -201,22 +220,31 @@
 
 
 	<!-- footer section start -->
-	<footer class="footer-section text-center">
-		<div class="container">
-			<h2 class="section-title mb-5">Let’s work together</h2>
-			<a href="mailto:jkvnguyen@hotmail.com" class="site-btn">Get in touch</a>
-			<div class="social-links">
-				<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span> </a>
-				<a href="https://www.youtube.com/channel/UCzfuPVQFwT4GPd5YwntBcQQ?view_as=subscriber"><span class="fa fa-youtube"></span></a>
-				<a href="https://github.com/jkvnguyen"><span class="fa fa-github"></span></a>
+	<footer class="footer-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8">
+					<h2 class="footer-message">let's get in touch</h2>
+				</div>
+				<div class="col-md-4 text-md-right">
+					<div class="social-links">
+						<!-- <a href=""><span class="fa fa-pinterest"></span></a> -->
+						<!-- <p>get in touch <i class="fa fa-long-arrow-down" style="font-size:24px"></i> </p>  -->
+						<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span></a>
+						<a href="mailto:jkvnguyen@hotmail.com"><span class="fa fa-envelope-o"></span></a>
+						<!-- <a href="mailto:jkvnguyen@hotmail.com" class="site-btn">get in touch</a> -->
+
+						<!-- <a href=""><span class="fa fa-twitter"></span></a> -->
+					</div>
+					<div class="copyright">
+	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen</a> -->
+	</div>
+				</div>
 			</div>
-			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen </a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</div>
 		</div>
 	</footer>
 	<!-- footer section end -->
+
 
 
 	<!--====== Javascripts & Jquery ======-->
@@ -225,5 +253,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jerem
 	<script src="js/mixitup.min.js"></script>
 	<script src="js/magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
-</body>
-</html>
+	</body>
+	</html>

@@ -3,18 +3,52 @@
 <head>
 	<title>Jeremy Nguyen - Portfolio</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Riddle - Portfolio Template">
-	<meta name="keywords" content="portfolio, riddle, onepage, creative, html">
+	<meta name="description" content="Jeremy Nguyen - Portfolio">
+	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Scripts -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header-section").style.top = "0px";
+  } else {
+    document.getElementById("header-section").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("main-menu");
+var btns = header.getElementsByClassName("a");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) {
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
 	<!-- Favicon -->
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
 
@@ -24,26 +58,25 @@
 	<![endif]-->
 
 </head>
-<body>
+<body class="body-pad">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
 
 	<!-- header section start -->
-	<header class="header-section">
+	<header id="header-section">
 		<div class="container-fluid">
 			<div class="row">
 				<a href="https://jkvnguyen.github.io/" class="logo">
-					<h2 class="site-logo">JEREMY NGUYEN</h2>
+					<h2 class="site-logo">JN</h2>
 				</a>
 				<div class="col home-2 text-left text-md-right">
 					<nav class="main-menu">
 						<ul>
-							<li><a href="https://jkvnguyen.github.io/">Home</a></li>
-							<li><a href="resume.pdf">Resume</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="about.html">about</a></li>
+							<li><a href="resume.pdf">resume</a></li>
+							<li><a href="mailto:jkvnguyen@hotmail.com">talk to me</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -56,24 +89,33 @@
 	</header>
 	<!-- header section end -->
 
+	<!-- intro section start -->
+	<div style="padding-bottom: 130px;">
+	</div>
+	<!-- intro section end -->
+
 <br>
 
 
-<section class="intro-section">
-	<div class="container text-center">
+<section class="page-section">
+	<div class="container-fluid p-0">
 		<div class="row">
-			<div class="col-xl-10 offset-xl-1">
+			<div class="col-lg-11">
 
 
-				<h3> Divide and Conquer</h3>
+				<h3> Stormcraft </h3>
 
 				<br>
-
-				<h5> About </h5>
 				<br>
+				<h4> About </h4>
 
-				<p> Divide and Conquer is a multiplayer battle arena strategy game proof of concept where you... well, divide and conquer. You, the player, play as a selected hero. As the hero, you are the controller of your armies tasked with destroying the opponent's
-					base. </p>
+
+				<p> Stormcraft is a multiplayer battle arena strategy game proof of concept for a mobile. You, the player, play as a selected hero with the ability to cast unique spells and spawn minions to target objectives.
+					</p>
+					<br>
+					<iframe width="800" height="400" src="https://www.youtube.com/embed/Z2HdUyhtpzA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<br>
+					<br>
 
 					<b> <i> Platform:  PC, mobile </i> </b>
 
@@ -85,9 +127,9 @@
 
 					<br>
 					<br>
-				<h5 > What I did: </h5>
+					<br>
+				<h4 > What I did: </h4>
 
-				<br>
 				<ul>
 					<li> Created character concepts, design, and model. </li>
 
@@ -101,28 +143,24 @@
 
 				<div style="margin-bottom: 10px"> </div>
 
-				<hr>
+
 
 								<br>
-				<h4 > Character Design </h4>
-				<br>
+								<br>
+				<h5 > Character Design </h5>
 				<br>
 
- 			 <h5> Initial Concepts </h5>
-			 <br>
- 			 <p> Here are the initial sketches/ideas for faction types. We wanted to design the non-human factions first because these faction
+ 			 <p> We wanted to design the non-human factions first because these faction
  				 help enable more unique abilities. Although humans can possess unique abilities using a bit of imagination, we wanted to show a clear
- 				 distinction of racism (via the story) as a central theme of the game and emphasize it more using epic fantasy. Because of the game's story being played
+ 				 distinction of race (via the story) as a central theme of the game and emphasize it more using epic fantasy. Because of the game's story being played
  				 out as epic fantasy, we wanted to use this opportunity to design something that was unique to our game.
  			 </p>
 
 
- 				 <img src="img/divide-and-conquer/concept5.jpg" width=240 style="margin-right: 5px;">
+
 
 				 <br>
-				 <br>
- 			 <h5> Ezrae </h5>
-			 <br>
+ 			 <h4> Ezrae </h4>
 
  			 <p>
  				 Initially I had intended to design Ezrae as physically imposing as to change the narrative of female characters as seen as fragile.
@@ -133,6 +171,7 @@
  				 As a Fortician, she also possesses the ability to absorb spells and redistritube them to her own weapons. This effect I wanted to look light blue to
  				 represent energy field that is absorbing magic/spells.
  					 <br>
+					 <br>
 
  				 As a human hero, Ezrae's design draws inspiration from Brandon Sanderson's <span class="italics"> Mistborn</span>'s Vin.
  				 Conceptually Ezrae is supposed to be seen as fragile so she wears light and vulnerable armor. However, she is
@@ -141,22 +180,23 @@
 
  				</p>
 
+				<br>
+
  			 <div class=pic-center>
- 				 <img src="img/divide-and-conquer/concept.jpg" width=240 style="margin-right: 5px;">
- 				 <img src="img/divide-and-conquer/concept2.png" width=240 style="margin-right: 5px;">
- 				 <img src="img/divide-and-conquer/concept3.png" width=500 style="margin-top: 10px; margin-right: 5px;">
+ 				 <img src="img/stormcraft/concept.jpg" width=300 style="margin-right: 5px;">
+ 				 <img src="img/stormcraft/concept2.png" width=400 style="margin-right: 5px;">
+ 				 <img src="img/stormcraft/concept3.png" width=500 style="margin-top: 10px; margin-right: 5px;">
  			 </div>
 
 			 <br>
-			 <hr>
 			 <br>
 
- 			 <h4> Game Mechanics </h4>
+ 			 <h5> Game Mechanics </h5>
+			 <br>
 			 <br>
 
 
- 			 <h5> Heroes </h5>
-			 <br>
+ 			 <h4> Heroes </h4>
 
  			 <p> There are 4 factions players can choose from and play (currently 2). Among those factions are a variety (thinking 3 each faction) of heroes the player can select from to choose as their main hero.
  			 Each factions' heroes possess unique abilities similarly to the <span class="italics"> Warcraft III </span> design. Heroes possess 2 types of abilities. Their own unique abilities and abilities
@@ -164,9 +204,10 @@
  			 what "divides" to help you conquer. You, the hero, summon/spawn 3 different types of minions that help you control and win the game.
 
  			</p>
-
- 			<h5 > Minions </h5>
 			<br>
+
+ 			<h4 > Minions </h4>
+
  			<p>There are 3 types of minions the hero can spawn: the infantry unit, range unit, and heavy unit. Model follows similarly to both Warcraft III and Starcraft designs, where a specific
  			types counter other types. Ideally, our group had wanted 4 different factions, where each faction's minion types are all different and counter types are unique depending on <thead>
  				faction the player is playing against but due to time constraints we went with only 2 factions for now. When a unit is "countered" units that counter another unit deal extra amount of damage
@@ -190,10 +231,11 @@
  				player would have to intelligently summon their minions in such a way that the counters can be avoided.</p>
 
 				<br>
- 				<h4 > Combat System </h4>
 				<br>
 
- 				<iframe width="640" height="360" src="https://www.youtube.com/embed/Z2HdUyhtpzA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ 				<h5 > Combat System </h5>
+				<br>
+				<br>
 
 
  				<div class="spacing"> </div>
@@ -210,19 +252,20 @@
  					based on the numbers of outer towers destroyed to encourage more strategical lines of attack as opposed to attacking one location.
  				</p>
 
- 				<h5 > Field of View </h5>
+				<br>
+ 				<h4 > Field of View </h4>
 
  				<p> To enabled combat, each unit possesses a field of view. <p>
 
- 					<div class=pic-center>
- 						<img src="img/divide-and-conquer/concept7.jpg" width=240 style="margin-right: 5px;">
- 					</div>
+ 					<!-- <div class=pic-center>
+ 						<img src="img/stormcraft/concept7.jpg" width=400 style="margin-right: 5px;">
+ 					</div> -->
 
  					<p> Field of view uses a ray caster that traces over a 3D sphere and determines if there are obstacles and objects within the object's field of view.
  					</p>
 
- 					<h5> Towers / Nexus </h5>
 					<br>
+ 					<h4> Towers / Nexus </h4>
 
  					<p> Outer towers deal less than inner towers if both are standing/alive. Inner towers' damage are reduced to
  					the same as outer towers if all outer towers are destroyed. Inner tower damage is reduced based on numbers of outer tower destroyed. </p>
@@ -231,9 +274,8 @@
  					At least one inner tower must be destroy for the Nexus to be attacked. In the case where players try
  					to circumvent this, Nexus will gain invulnerablility. </p>
 
-
- 			<h5 > Level Design </h5>
-			<br>
+					<br>
+ 			<h4 > Level Design </h4>
 
  			<p>
  				The level design we based off of MOBA styled games. We used <i> League of Legends </i>, <i> DOTA 2 </i>, and
@@ -250,24 +292,23 @@
 
 			<div class="row">
 	 			<div class="level" style="margin: 0 auto;"> START <br>
-	 				<img class="imageBorder" src="img/divide-and-conquer/TechnicalSystem1.png" width=240 style="margin-right: 5px;">
+	 				<img class="imageBorder" src="img/stormcraft/TechnicalSystem1.png" width=240 style="margin-right: 5px;">
 	 			</div>
 
 	 			<div class="level" style="margin: 0 auto;"> EARLY GAME <br>
-	 				<img class="imageBorder" src="img/divide-and-conquer/TechnicalSystem2.png" width=240 style="margin-right: 5px;">
+	 				<img class="imageBorder" src="img/stormcraft/TechnicalSystem2.png" width=240 style="margin-right: 5px;">
 	 			</div>
 
 	 			<div class="level" style="margin: 0 auto;"> MID GAME / TOWER / SPAWN <br>
-	 				<img class="imageBorder" src="img/divide-and-conquer/TechnicalSystem3.png" width=240 style="margin-right: 5px;">
+	 				<img class="imageBorder" src="img/stormcraft/TechnicalSystem3.png" width=240 style="margin-right: 5px;">
 	 			</div>
 
 	 				<div class="level" style="margin: 0 auto;"> END GAME <br>
-	 					<img class="imageBorder" src="img/divide-and-conquer/TechnicalSystem4.png" width=240 style="margin-right: 5px;">
+	 					<img class="imageBorder" src="img/stormcraft/TechnicalSystem4.png" width=240 style="margin-right: 5px;">
 	 				</div>
 		</div>
 
  			<br>
-			<br>
 			<br>
 
  			<p> <b> Start: </b> Players spawn are mirrored and players spawn at the Nexus (for sake of showing the hero more clearly the
@@ -275,33 +316,16 @@
 
 					<br>
 
-					<hr>
-					<br>
+
+
 
 					<h4 > Concluding Notes </h4>
-					<br>
 
-					<p> The game was developed as a proof of concept as completing the whole game would require more than two months. Complications also arose within the team which also affected
-					the overall completeness of the game.</p>
+					<p> The game was developed as a proof of concept as completing the whole game would require more than two months.</p>
 
 
 					<br>
-					<hr>
-					<br>
 
-					<h4 > Software </h4>
-	 			 <br>
-
-	 			 <img src="img/logos/Unity.png" width="85" style="margin-right: 10px;">
-	 			 <img src="img/logos/photoshop.png" width="65" style="margin-right: 10px;">
-	 			 <br>
-	 			 <br>
-	 			 <br>
-
-	 			 <h4 > Language </h4>
-	 			 <br>
-
-	 			 <img src="img/logos/Csharp.png" width="50" style="margin-right: 10px;">
 
 			</div>
 		</div>
@@ -311,29 +335,37 @@
 
 
 <!-- footer section start -->
-<footer class="footer-section text-center">
-	<div class="container">
-		<h2 class="section-title mb-5">Let’s work together</h2>
-		<a href="mailto:jkvnguyen@hotmail.com" class="site-btn">Get in touch</a>
-		<div class="social-links">
-			<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span> </a>
-			<a href="https://www.youtube.com/channel/UCzfuPVQFwT4GPd5YwntBcQQ?view_as=subscriber"><span class="fa fa-youtube"></span></a>
-			<a href="https://github.com/jkvnguyen"><span class="fa fa-github"></span></a>
-		</div>
-		<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen </a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<footer class="footer-section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8">
+				<h2 class="footer-message">let's get in touch</h2>
+			</div>
+			<div class="col-md-4 text-md-right">
+				<div class="social-links">
+					<!-- <a href=""><span class="fa fa-pinterest"></span></a> -->
+					<!-- <p>get in touch <i class="fa fa-long-arrow-down" style="font-size:24px"></i> </p>  -->
+					<a href="https://www.linkedin.com/in/jkvnguyen/"><span class="fa fa-linkedin"></span></a>
+					<a href="mailto:jkvnguyen@hotmail.com"><span class="fa fa-envelope-o"></span></a>
+					<!-- <a href="mailto:jkvnguyen@hotmail.com" class="site-btn">get in touch</a> -->
+
+					<!-- <a href=""><span class="fa fa-twitter"></span></a> -->
+				</div>
+				<div class="copyright">
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> Jeremy Nguyen</a> -->
 </div>
+			</div>
+		</div>
 	</div>
 </footer>
 <!-- footer section end -->
 
 
-	<!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/mixitup.min.js"></script>
-	<script src="js/magnific-popup.min.js"></script>
-	<script src="js/main.js"></script>
+<!--====== Javascripts & Jquery ======-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
