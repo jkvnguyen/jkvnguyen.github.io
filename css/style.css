@@ -67,11 +67,11 @@ h2 {
 h3 {
   color: #000000;
   margin: 0;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
-  border-bottom: 2px solid #000;
-  border-bottom-style: solid;
-  width: max-content;
+  /* border-bottom: 2px solid #000; */
+  /* border-bottom-style: solid; */
+  /* width: max-content; */
 }
 
 h4 {
@@ -193,12 +193,12 @@ hr {
   Helper css
 --------------------------*/
 .body-pad {
-  padding: 0 40px;
+  /* padding: 0 40px; */
   background-color: #f6f6f6;
 }
 
 .body-pad .footer-section {
-  margin: 0 -40px;
+  margin: 0 -25px;
   margin-top: 80px;
 }
 
@@ -227,7 +227,7 @@ hr {
   font-size: 42px;
   width: 85%;
   padding-bottom: 50px;
-  color: #333333;
+  color: #111111;
   font-family: 'SFProDisplay';
 }
 
@@ -707,7 +707,8 @@ header {
 --------------------------*/
 .footer-section {
   padding: 50px 15px 30px 15px;
-  background-color: #100c08;
+  background-color: black;
+
 }
 
 .footer-section .copyright {
@@ -884,7 +885,7 @@ Page Section
 }
 
 .page-section ul li {
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   margin-left: 20px;
 }
 
